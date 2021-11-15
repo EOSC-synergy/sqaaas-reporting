@@ -1,18 +1,40 @@
 import argparse
 
+from stevedore import driver, extension
 
-def get_parser():
-    parser = argparse.ArgumentParser(
-        description="Run parsers for SQAaaS-supported tools",
+
+def get_validators():
+    mgr = extension.ExtensionManager(
+        namespace="sqaaas.validators"
     )
+    return dict((x.name, x.plugin) for x in mgr)
+
+
+def get_parser(validators):
+    parser = argparse.ArgumentParser(
+        description="Run output validators for the SQAaaS-supported tools",
+    )
+
+    parser.add_argument(
+        'validators',
+        metavar='VALIDATOR',
+        type=str,
+        choices=validators,
+        help=(
+            'Identifier of the output validator for the tool being triggered.'
+            'Allowed values: {%(choices)s}'
+        )
+    )
+
     return parser
 
 
 def main():
-    opts = get_parser().parse_args()
+    validators = get_validators()
+    opts = get_parser(validators).parse_args()
 
     mgr = driver.DriverManager(
-        namespace="report2sqaaas.parsers",
-        name=opts.format,
+        namespace="report2sqaaas.validators",
+        name=opts.validators,
         invoke_on_load=True,
     )
