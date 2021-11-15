@@ -12,6 +12,10 @@ setup(
     url='https://github.com/eosc-synergy/sqaaas-reporting',
     author='Pablo Orviz',
     author_email='orviz@ifca.unican.es',
+    # For a list of valid classifiers, see https://pypi.org/classifiers/
+    classifiers=[
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+    ],
     keywords='sqaaas',
     package_dir={'report2sqaaas': 'report2sqaaas'},
     packages=['report2sqaaas'],
