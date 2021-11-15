@@ -7,7 +7,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='report2sqaaas',
-    version='2.0.0',
+    version='1.0.0',
     description='The reporting component for the SQAaaS platform',
     url='https://github.com/eosc-synergy/sqaaas-reporting',
     author='Pablo Orviz',
