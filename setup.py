@@ -14,7 +14,10 @@ setup(
     author_email='orviz@ifca.unican.es',
     # For a list of valid classifiers, see https://pypi.org/classifiers/
     classifiers=[
+        'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Environment :: Console',
+        'Development Status :: 3 - Alpha',
     ],
     keywords='sqaaas',
     package_dir={'report2sqaaas': 'report2sqaaas'},
