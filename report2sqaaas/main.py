@@ -33,8 +33,9 @@ def main():
     allowed_validators = get_validators()
     opts = get_parser(allowed_validators).parse_args()
 
-    mgr = driver.DriverManager(
+    validator = driver.DriverManager(
         namespace="sqaaas.validators",
         name=opts.validators,
         invoke_on_load=True,
     )
+    validator.driver.validate()
