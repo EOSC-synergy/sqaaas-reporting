@@ -19,6 +19,15 @@ def get_parser(validators):
         )
     )
 
+    parser.add_argument(
+        'input_file',
+        metavar='FILE',
+        type=str,
+        help=(
+            'Location of the file that contains the output to be validated.'
+        )
+    )
+
     return parser
 
 
@@ -27,4 +36,4 @@ def main():
     opts = get_parser(allowed_validators).parse_args()
 
     validator = utils.get_validator(opts.validators)
-    validator.driver.validate()
+    validator.driver.validate(opts.input_file)
