@@ -1,13 +1,6 @@
 import argparse
 
-from stevedore import driver, extension
-
-
-def get_validators():
-    mgr = extension.ExtensionManager(
-        namespace="sqaaas.validators"
-    )
-    return dict((x.name, x.plugin) for x in mgr)
+from report2sqaaas import utils
 
 
 def get_parser(validators):
@@ -30,12 +23,8 @@ def get_parser(validators):
 
 
 def main():
-    allowed_validators = get_validators()
+    allowed_validators = utils.get_validators()
     opts = get_parser(allowed_validators).parse_args()
 
-    validator = driver.DriverManager(
-        namespace="sqaaas.validators",
-        name=opts.validators,
-        invoke_on_load=True,
-    )
+    validator = utils.get_validator(opts.validators)
     validator.driver.validate()
