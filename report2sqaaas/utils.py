@@ -7,7 +7,7 @@ NAMESPACE = 'sqaaas.validators'
 
 
 class BaseValidator(object):
-    def validate(self):
+    def validate(self) -> dict:
         return NotImplementedError
 
 
