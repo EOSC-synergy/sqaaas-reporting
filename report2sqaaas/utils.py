@@ -1,3 +1,5 @@
+import json
+
 from stevedore import driver, extension
 
 
@@ -22,3 +24,9 @@ def get_validator(name):
         name=name,
         invoke_on_load=True,
     )
+
+
+def load_json(file_name):
+    with open(file_name) as json_file:
+        json_data = json.load(json_file)
+    return json_data
