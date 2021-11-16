@@ -30,8 +30,8 @@ def get_parser(validators):
 
 
 def main():
-    validators = get_validators()
-    opts = get_parser(validators).parse_args()
+    allowed_validators = get_validators()
+    opts = get_parser(allowed_validators).parse_args()
 
     mgr = driver.DriverManager(
         namespace="sqaaas.validators",
