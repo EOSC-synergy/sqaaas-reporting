@@ -1,4 +1,5 @@
 import argparse
+import json
 
 from report2sqaaas import utils
 
@@ -36,4 +37,5 @@ def main():
     opts = get_parser(allowed_validators).parse_args()
 
     validator = utils.get_validator(opts.validators)
-    validator.driver.validate(opts.input_file)
+    out = validator.driver.validate(opts.input_file)
+    print(json.dumps(out, indent=4))
