@@ -34,7 +34,7 @@ def main():
     opts = get_parser(validators).parse_args()
 
     mgr = driver.DriverManager(
-        namespace="report2sqaaas.validators",
+        namespace="sqaaas.validators",
         name=opts.validators,
         invoke_on_load=True,
     )
