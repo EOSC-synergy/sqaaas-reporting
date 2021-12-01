@@ -1,3 +1,4 @@
+import abc
 import logging
 import os.path
 import json
@@ -15,7 +16,14 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 
-class BaseValidator(object):
+class BaseValidator(abc.ABC):
+    def __init_subclass__(cls, **kwargs):
+        required_properties = ['name']
+        for prop in required_properties:
+            if not hasattr(cls, prop):
+                raise NotImplementedError('ERROR: mandatory property <%s> has not been defined!' % prop)
+        return super().__init_subclass__(**kwargs)
+
     def validate(self) -> dict:
         return NotImplementedError
 
