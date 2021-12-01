@@ -2,6 +2,7 @@ import abc
 import logging
 import os.path
 import json
+import sys
 
 from stevedore import driver, extension
 
@@ -10,7 +11,7 @@ NAMESPACE = 'sqaaas.validators'
 
 logger = logging.getLogger('sqaaas.reporting')
 logger.setLevel(logging.DEBUG)
-ch = logging.StreamHandler()
+ch = logging.StreamHandler(sys.stdout)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
