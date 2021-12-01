@@ -15,7 +15,7 @@ def get_parser(validators):
         type=str,
         choices=validators,
         help=(
-            'Identifier of the output validator for the tool being triggered.'
+            'Identifier of the output validator for the tool being triggered. '
             'Allowed values: {%(choices)s}'
         )
     )
