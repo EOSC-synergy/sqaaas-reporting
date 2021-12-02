@@ -31,9 +31,15 @@ class BaseValidator(abc.ABC):
         return NotImplementedError
 
 
+def handle_plugin_load_error(*args):
+    mgr, entry_point, exception = args
+    logger.error('Cannot load validator plugin <%s>: %s' % (entry_point, exception))
+
+
 def get_validators():
     mgr = extension.ExtensionManager(
-        namespace=NAMESPACE
+        namespace=NAMESPACE,
+        on_load_failure_callback=handle_plugin_load_error
     )
     validators = dict((x.name, x.plugin) for x in mgr)
     logger.debug('Found the following SQAaaS validators under namespace <%s>: %s' % (NAMESPACE, validators))
