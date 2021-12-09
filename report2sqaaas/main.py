@@ -21,11 +21,11 @@ def get_parser(validators):
     )
 
     parser.add_argument(
-        'input_file',
-        metavar='FILE',
+        'stdout',
+        metavar='FILE|TEXT',
         type=str,
         help=(
-            'Location of the file that contains the output to be validated.'
+            'Location of the file or text that contains the output to be validated.'
         )
     )
 
