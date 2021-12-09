@@ -57,7 +57,7 @@ def get_validators():
 
 
 def get_validator(opts):
-    if not type(opts) in [dict]:
+    if type(opts) in [dict]:
         opts = SimpleNamespace(**opts)
 
     name = opts.validator
