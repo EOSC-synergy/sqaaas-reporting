@@ -4,6 +4,8 @@ import os.path
 import json
 import sys
 
+from types import SimpleNamespace
+
 from stevedore import driver, extension
 
 
@@ -20,6 +22,7 @@ logger.addHandler(ch)
 class BaseValidator(abc.ABC):
     def __init__(self, opts, **kwargs):
         self.opts = opts # Make parser args (opts) available to all subclasses
+        self.name = opts.validator
 
     def __init_subclass__(cls, **kwargs):
         required_properties = ['name']
@@ -54,7 +57,10 @@ def get_validators():
 
 
 def get_validator(opts):
-    name = opts.validators
+    if not type(opts) in [dict]:
+        opts = SimpleNamespace(**opts)
+
+    name = opts.validator
     logger.debug('Loading validator <%s> from namespace <%s>' % (NAMESPACE, name))
     return driver.DriverManager(
         namespace=NAMESPACE,
