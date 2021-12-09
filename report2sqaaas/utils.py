@@ -27,6 +27,10 @@ class BaseValidator(abc.ABC):
                 raise NotImplementedError(_reason)
         return super().__init_subclass__(**kwargs)
 
+    @staticmethod
+    def populate_parser(parser):
+        pass
+
     def validate(self) -> dict:
         return NotImplementedError
 
