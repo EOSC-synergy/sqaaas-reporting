@@ -18,6 +18,9 @@ logger.addHandler(ch)
 
 
 class BaseValidator(abc.ABC):
+    def __init__(self, opts, **kwargs):
+        self.opts = opts # Make parser args (opts) available to all subclasses
+
     def __init_subclass__(cls, **kwargs):
         required_properties = ['name']
         for prop in required_properties:
@@ -50,12 +53,14 @@ def get_validators():
     return validators
 
 
-def get_validator(name):
+def get_validator(opts):
+    name = opts.validators
     logger.debug('Loading validator <%s> from namespace <%s>' % (NAMESPACE, name))
     return driver.DriverManager(
         namespace=NAMESPACE,
         name=name,
         invoke_on_load=True,
+        invoke_args=(opts,)
     )
 
 

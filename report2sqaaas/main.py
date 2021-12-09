@@ -40,6 +40,6 @@ def main():
     allowed_validators = utils.get_validators()
     opts = get_parser(allowed_validators).parse_args()
 
-    validator = utils.get_validator(opts.validators)
+    validator = utils.get_validator(opts)
     out = validator.driver.validate(opts.input_file)
     print(json.dumps(out, indent=4))
