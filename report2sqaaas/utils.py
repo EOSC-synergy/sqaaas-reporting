@@ -25,7 +25,7 @@ class BaseValidator(abc.ABC):
         self.name = opts.validator
 
     def __init_subclass__(cls, **kwargs):
-        required_properties = ['name']
+        required_properties = [] # NOTE disabled for the time being
         for prop in required_properties:
             if not hasattr(cls, prop):
                 _reason = 'ERROR: mandatory property <%s> has not been defined!' % prop
