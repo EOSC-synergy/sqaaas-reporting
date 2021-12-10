@@ -28,7 +28,7 @@ class BaseValidator(abc.ABC):
         required_properties = [] # NOTE disabled for the time being
         for prop in required_properties:
             if not hasattr(cls, prop):
-                _reason = 'ERROR: mandatory property <%s> has not been defined!' % prop
+                _reason = 'Mandatory property <%s> has not been defined!' % prop
                 logger.error(_reason)
                 raise NotImplementedError(_reason)
         return super().__init_subclass__(**kwargs)
