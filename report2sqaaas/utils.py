@@ -38,7 +38,19 @@ class BaseValidator(abc.ABC):
         pass
 
     def validate(self) -> dict:
-        return NotImplementedError
+        """
+        Main method being called by the report2sqaaas module.
+
+        This method shall be implemented and return at the very least a dict
+        containing the value of the <valid> variable, such as:
+
+        return {
+            'valid': self.valid
+        }
+        """
+        _reason = 'Plugin <%s> has no validate() method' % self.name
+        logger.error(_reason)
+        return NotImplementedError(_reason)
 
 
 def handle_plugin_load_error(*args):
