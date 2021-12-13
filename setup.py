@@ -23,6 +23,9 @@ setup(
     package_dir={'report2sqaaas': 'report2sqaaas'},
     packages=['report2sqaaas'],
     # python_requires='>=3.6, <4',
+    install_requires=[
+        'stevedore>=3.5.0'
+    ],
     entry_points={
         'console_scripts': [
             'report2sqaaas=report2sqaaas.main:main',
