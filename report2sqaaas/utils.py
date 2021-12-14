@@ -37,6 +37,7 @@ class BaseValidator(abc.ABC):
     def populate_parser(parser):
         pass
 
+    @abc.abstractmethod
     def validate(self) -> dict:
         """
         Main method being called by the report2sqaaas module.
@@ -48,9 +49,6 @@ class BaseValidator(abc.ABC):
             'valid': self.valid
         }
         """
-        _reason = 'Plugin <%s> has no validate() method' % self.name
-        logger.error(_reason)
-        return NotImplementedError(_reason)
 
 
 def handle_plugin_load_error(*args):
