@@ -71,7 +71,7 @@ def get_validator(opts):
         opts = SimpleNamespace(**opts)
 
     name = opts.validator
-    logger.debug('Loading validator <%s> from namespace <%s>' % (NAMESPACE, name))
+    logger.debug('Loading validator <%s> from namespace <%s>' % (name, NAMESPACE))
     return driver.DriverManager(
         namespace=NAMESPACE,
         name=name,
