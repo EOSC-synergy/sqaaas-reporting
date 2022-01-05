@@ -24,6 +24,8 @@ class BaseValidator(abc.ABC):
         self.opts = opts # Make parser args (opts) available to all subclasses
         self.name = opts.validator
 
+        logger.debug('Running SQAaaS\' <%s> validator' % self.name)
+
     def __init_subclass__(cls, **kwargs):
         required_properties = [] # NOTE disabled for the time being
         for prop in required_properties:
