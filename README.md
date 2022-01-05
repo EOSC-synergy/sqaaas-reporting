@@ -33,3 +33,9 @@ such as:
 $ licensee detect . --json > licensee_data.json
 $ report2sqaaas licensee licensee_data.json
 ```
+
+## Related repositories
+- [sqaaas-reporting-plugins](https://github.com/eosc-synergy/sqaaas-reporting-plugins),
+  which hosts the current set of supported output validation plugins.
+- [sqaaas-reporting-cookiecutter](https://github.com/eosc-synergy/sqaaas-reporting-cookiecutter),
+  which provides a template to easily create the structure of new plugins.
