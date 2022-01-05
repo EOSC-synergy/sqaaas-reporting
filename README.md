@@ -15,7 +15,8 @@ by the [SQAaaS API](https://github.com/eosc-synergy/sqaaas-api-server). This
 module will load all the plugins found under `sqaaas.validators` namespace.
 
 The `report2sqaaas` can be used as a Python module, but also provides a CLI
-that can facilitate the testing of the [supported plugins](https://github.com/eosc-synergy/sqaaas-reporting-plugins).
+that can facilitate the testing of the
+[supported plugins](https://github.com/eosc-synergy/sqaaas-reporting-plugins).
 
 ## Installation
 ```
