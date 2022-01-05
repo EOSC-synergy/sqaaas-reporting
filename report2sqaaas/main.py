@@ -30,7 +30,7 @@ def get_parser(validators):
     )
 
     for validator_name, validator_obj in validators.items():
-        group = parser.add_argument_group("%s validator plugin options" % validator_name)
+        group = parser.add_argument_group("<%s> validator plugin options" % validator_name)
         validator_obj.populate_parser(group)
 
     return parser
