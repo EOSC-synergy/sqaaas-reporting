@@ -29,6 +29,16 @@ def get_parser(validators):
         )
     )
 
+    parser.add_argument(
+        '--threshold',
+        metavar='NUMBER',
+        type=int,
+        help=(
+            'Optional argument required by some plugins in order to state '
+            'whether the validation is successful'
+        )
+    )
+
     for validator_name, validator_obj in validators.items():
         group = parser.add_argument_group("<%s> validator plugin options" % validator_name)
         validator_obj.populate_parser(group)
