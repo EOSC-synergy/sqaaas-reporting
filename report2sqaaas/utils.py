@@ -24,7 +24,27 @@ class BaseValidator(abc.ABC):
         self.opts = opts # Make parser args (opts) available to all subclasses
         self.name = opts.validator
 
-        logger.debug('Running SQAaaS\' <%s> validator' % self.name)
+        init_msg = 'Running SQAaaS\' <%s> validator' % self.name
+        if hasattr(self, 'threshold'):
+            logger.debug(
+                'Default threshold set in validator <%s> class: %s' % (
+                    self.name, self.threshold
+                )
+            )
+            if self.opts.threshold is not None:
+                logger.debug((
+                    'Threshold value passed through CLI: '
+                    '%s' % self.opts.threshold
+                ))
+                self.threshold = self.opts.threshold
+            logger.debug(
+                'Final threshold value set for validator <%s> is '
+                '%s' % (self.name, self.threshold)
+            )
+            init_msg = ' '.join([
+                init_msg, '(with threshold: %s)' % self.threshold
+            ])
+        logger.info(init_msg)
 
     def __init_subclass__(cls, **kwargs):
         required_properties = [] # NOTE disabled for the time being
