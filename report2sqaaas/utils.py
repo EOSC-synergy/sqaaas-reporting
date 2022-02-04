@@ -31,16 +31,19 @@ class BaseValidator(abc.ABC):
                     self.name, self.threshold
                 )
             )
-            if self.opts.threshold is not None:
-                logger.debug((
-                    'Threshold value passed through CLI: '
-                    '%s' % self.opts.threshold
-                ))
-                self.threshold = self.opts.threshold
-            logger.debug(
-                'Final threshold value set for validator <%s> is '
-                '%s' % (self.name, self.threshold)
-            )
+            try:
+                if self.opts.threshold is not None:
+                    logger.debug((
+                        'Threshold value passed through CLI: '
+                        '%s' % self.opts.threshold
+                    ))
+                    self.threshold = self.opts.threshold
+                logger.debug(
+                    'Final threshold value set for validator <%s> is '
+                    '%s' % (self.name, self.threshold)
+                )
+            except AttributeError:
+                pass
             init_msg = ' '.join([
                 init_msg, '(with threshold: %s)' % self.threshold
             ])
