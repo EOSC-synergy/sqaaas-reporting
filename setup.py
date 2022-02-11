@@ -22,7 +22,10 @@ setup(
     keywords='sqaaas',
     package_dir={'report2sqaaas': 'report2sqaaas'},
     packages=['report2sqaaas'],
-    package_data={'report2sqaaas': ['standards/SQA_baseline/QC.Doc.json']},
+    package_data={'report2sqaaas': [
+        'standards/SQA_baseline/QC.Doc.json',
+        'standards/SQA_baseline/QC.Lic.json'
+    ]},
     # python_requires='>=3.6, <4',
     install_requires=[
         'stevedore>=3.5.0'

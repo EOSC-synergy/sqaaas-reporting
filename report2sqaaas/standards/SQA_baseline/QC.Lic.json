@@ -1,0 +1,28 @@
+{
+    "QC.Lic": {
+        "QC.Lic01": {
+            "description": "Is code licensed to be freely used, modified and distributed by others?",
+            "evidence": {
+                "success": "LICENSE file found in the code repository",
+                "failure": "LICENSE file not found in the code repository"
+            },
+            "requirement_level": "MUST"
+        },
+        "QC.Lic02": {
+            "description": "Does the code use a license approved by Open Source Initiative?",
+            "evidence": {
+                "success": "License <%s> is approved by the Open Source Initiative",
+                "failure": "License <%s> is not approved by the Open Source Initiative"
+            },
+            "requirement_level": "MUST"
+        },
+        "QC.Lic02.1": {
+            "description": "Does the code use a popular license approved by Open Source Initiative?",
+            "evidence": {
+                "success": "License <%s> is listed under the Open Source Initiative popular category",
+                "failure": "License <%s> is not listed under the Open Source Initiative popular category"
+            },
+            "requirement_level": "MAY"
+        }
+    }
+}
