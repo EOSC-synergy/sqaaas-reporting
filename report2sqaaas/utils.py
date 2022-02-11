@@ -130,6 +130,8 @@ def load_criterion_from_standard(criterion):
         logger.error(
             'Criterion <%s> not found in the available standards!' % criterion
         )
+
     if data:
+        data = data[criterion]
         logger.info('Criterion <%s> loaded successfully' % criterion)
     return data
