@@ -17,7 +17,7 @@
             "requirement_level": "MUST"
         },
         "QC.Lic02.1": {
-            "description": "Does the code use a popular license approved by Open Source Initiative?",
+            "description": "Does the code use an Open Source Initiative's popular-recognized license?",
             "evidence": {
                 "success": "License <%s> is listed under the Open Source Initiative popular category",
                 "failure": "License <%s> is not listed under the Open Source Initiative popular category"
