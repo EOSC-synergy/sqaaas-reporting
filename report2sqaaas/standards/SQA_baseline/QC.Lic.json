@@ -3,8 +3,8 @@
         "QC.Lic01": {
             "description": "Is code licensed to be freely used, modified and distributed by others?",
             "evidence": {
-                "success": "LICENSE file found in the code repository",
-                "failure": "LICENSE file not found in the code repository"
+                "success": "An Open Source license found in the code repository: %s",
+                "failure": "No Open Source license found in the code repository"
             },
             "requirement_level": "MUST"
         },
