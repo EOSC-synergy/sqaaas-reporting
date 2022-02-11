@@ -8,6 +8,14 @@
             },
             "requirement_level": "MUST"
         },
+        "QC.Lic01.1": {
+            "description": "Is LICENSE file placed in the root path of the code repository?",
+            "evidence": {
+                "success": "LICENSE file is visible at the root path of the code repository: %s",
+                "failure": "LICENSE file is not placed at the root path of the code repository: %s"
+            },
+            "requirement_level": "MUST"
+        },
         "QC.Lic02": {
             "description": "Does the code use a license approved by Open Source Initiative?",
             "evidence": {
