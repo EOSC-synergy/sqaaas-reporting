@@ -1,60 +1,60 @@
 {
-    'QC.Doc': {
-        'QC.Doc01': {
-            'description': 'Are docs treated as code (`docs-as-code` approach), i.e. using a version control system?',
-            'evidence': {
-                'success': 'Documentation managed using <git>',
-                'failure': 'Documentation not managed through <git>',
+    "QC.Doc": {
+        "QC.Doc01": {
+            "description": "Are docs treated as code (`docs-as-code` approach), i.e. using a version control system?",
+            "evidence": {
+                "success": "Documentation managed using <git>",
+                "failure": "Documentation not managed through <git>"
             },
-            'requirement_level': 'MUST'
+            "requirement_level": "MUST"
         },
-        'QC.Doc01.1': {
-            'description': 'Are docs managed in the same repository as code?',
-            'evidence': {
-                'success': 'Documentation resides in the same repository as code',
-                'failure': 'Documentation resides in an individual repository, separated from code',
+        "QC.Doc01.1": {
+            "description": "Are docs managed in the same repository as code?",
+            "evidence": {
+                "success": "Documentation resides in the same repository as code",
+                "failure": "Documentation resides in an individual repository, separated from code"
             },
-            'requirement_level': 'MAY'
+            "requirement_level": "MAY"
         },
-        'QC.Doc02': {
-            'description': 'Are docs written using a markup language?',
-            'evidence': {
-                'success': 'Documentation written using <%s>',
-                'failure': 'Documentation is not written using a markup language',
+        "QC.Doc02": {
+            "description": "Are docs written using a markup language?",
+            "evidence": {
+                "success": "Documentation written using <%s>",
+                "failure": "Documentation is not written using a markup language"
             },
-            'requirement_level': 'MUST'
+            "requirement_level": "MUST"
         },
-        'QC.Doc03': {
-            'description': 'Are docs available in a documentation hosting platform?',
-            'evidence': {
-                'success': 'Documentation is hosted in an online platform',
-                'failure': 'Documentation is not hosted in an online platform',
+        "QC.Doc03": {
+            "description": "Are docs available in a documentation hosting platform?",
+            "evidence": {
+                "success": "Documentation is hosted in an online platform",
+                "failure": "Documentation is not hosted in an online platform"
             },
-            'requirement_level': 'MUST'
+            "requirement_level": "MUST"
         },
-        'QC.Doc06.1': {
-            'description': 'Is the software scope outlined in the code repository?',
-            'evidence': {
-                'success': 'A README file is present in the code repository',
-                'failure': 'A README file not present in the code repository',
+        "QC.Doc06.1": {
+            "description": "Is the software scope outlined in the code repository?",
+            "evidence": {
+                "success": "A README file is present in the code repository",
+                "failure": "A README file not present in the code repository"
             },
-            'requirement_level': 'MUST'
+            "requirement_level": "MUST"
         },
-        'QC.Doc06.2': {
-            'description': 'Is there a clear path or guidelines on how to contribute to the code?',
-            'evidence': {
-                'success': 'A CONTRIBUTING file is present in the code repository',
-                'failure': 'A CONTRIBUTING file is not present in the code repository',
+        "QC.Doc06.2": {
+            "description": "Is there a clear path or guidelines on how to contribute to the code?",
+            "evidence": {
+                "success": "A CONTRIBUTING file is present in the code repository",
+                "failure": "A CONTRIBUTING file is not present in the code repository"
             },
-            'requirement_level': 'MUST'
+            "requirement_level": "MUST"
         },
-        'QC.Doc06.3': {
-            'description': 'Does the project establish a code of conduct for its participants?',
-            'evidence': {
-                'success': 'A CODE_OF_CONDUCT file is present in the code repository',
-                'failure': 'A CODE_OF_CONDUCT file is not present in the code repository',
+        "QC.Doc06.3": {
+            "description": "Does the project establish a code of conduct for its participants?",
+            "evidence": {
+                "success": "A CODE_OF_CONDUCT file is present in the code repository",
+                "failure": "A CODE_OF_CONDUCT file is not present in the code repository"
             },
-            'requirement_level': 'MUST'
+            "requirement_level": "MUST"
         }
     }
 }

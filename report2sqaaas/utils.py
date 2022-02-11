@@ -119,9 +119,14 @@ def load_json(the_input):
 
 
 def load_criterion_from_standard(criterion):
+    SW_BASELINE_PATH = os.path.join(
+        os.path.dirname(__file__), 'standards/SQA_baseline'
+    )
     data = None
     if criterion.startswith('QC.'):
-        criterion_file = 'standards/SQA_baseline/%s.json' % criterion
+        criterion_file = os.path.join(
+            SW_BASELINE_PATH, '%s.json' % criterion
+        )
         logger.debug('Loading criterion <%s> from file: %s' % (
             criterion, criterion_file)
         )
