@@ -116,3 +116,20 @@ def load_json(the_input):
         if type(the_input) in [str]:
             json_data = json.loads(the_input)
     return json_data
+
+
+def load_criterion_from_standard(criterion):
+    data = None
+    if criterion.startswith('QC.'):
+        criterion_file = 'standards/SQA_baseline/%s.json' % criterion
+        logger.debug('Loading criterion <%s> from file: %s' % (
+            criterion, criterion_file)
+        )
+        data = load_json(criterion_file)
+    else:
+        logger.error(
+            'Criterion <%s> not found in the available standards!' % criterion
+        )
+    if data:
+        logger.info('Criterion <%s> loaded successfully' % criterion)
+    return data
