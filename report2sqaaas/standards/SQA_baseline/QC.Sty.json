@@ -1,0 +1,13 @@
+
+{
+    "QC.Sty": {
+        "QC.Sty01": {
+            "description": "Is the software product following a style standard for %s files?",
+            "evidence": {
+                "success": "%s files are compliant with <%s> standard",
+                "failure": "%s files are not compliant with <%s> standard",
+            },
+            "requirement_level": "MUST"
+        }
+    }
+}
