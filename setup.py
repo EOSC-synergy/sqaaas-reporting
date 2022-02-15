@@ -24,7 +24,7 @@ setup(
     packages=['report2sqaaas'],
     package_data={'report2sqaaas': [
         'standards/SQA_baseline/QC.Doc.json',
-        'standards/SQA_baseline/QC.Lic.json'
+        'standards/SQA_baseline/QC.Lic.json',
         'standards/SQA_baseline/QC.Sty.json'
     ]},
     # python_requires='>=3.6, <4',
