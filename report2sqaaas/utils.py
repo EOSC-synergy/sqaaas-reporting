@@ -2,6 +2,7 @@ import abc
 import logging
 import os.path
 import json
+import re
 import sys
 
 from types import SimpleNamespace
@@ -57,6 +58,21 @@ class BaseValidator(abc.ABC):
                 logger.error(_reason)
                 raise NotImplementedError(_reason)
         return super().__init_subclass__(**kwargs)
+
+    def get_criterion(self):
+        """
+        Get the criterion associated with the given subcriterion.
+
+        The subcriterion is passed as an input argument, and thus accessible
+        through self.opts.subcriterion
+        """
+        criterion = None
+        pattern = '(^(SvcQC|QC)\.[A-Z][a-z]{2})'
+        match = re.search(pattern, self.opts.subcriterion)
+        if match:
+            criterion = match.group(0)
+            logger.debug('Matching criterion found: %s' % criterion)
+        return criterion
 
     @staticmethod
     def populate_parser(parser):
