@@ -23,6 +23,7 @@ setup(
     package_dir={'report2sqaaas': 'report2sqaaas'},
     packages=['report2sqaaas'],
     package_data={'report2sqaaas': [
+        'standards/SQA_baseline/QC.Acc.json',
         'standards/SQA_baseline/QC.Doc.json',
         'standards/SQA_baseline/QC.Lic.json',
         'standards/SQA_baseline/QC.Sty.json'
