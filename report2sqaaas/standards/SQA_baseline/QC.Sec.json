@@ -1,0 +1,13 @@
+
+{
+    "QC.Sec": {
+        "QC.Sec02": {
+            "description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "evidence": {
+                "success": "Source code passes SAST checks",
+                "failure": "Found security weaknesses when performing SAST checks"
+            },
+            "requirement_level": "MUST"
+        }
+    }
+}
