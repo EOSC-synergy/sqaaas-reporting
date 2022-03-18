@@ -121,16 +121,31 @@ def get_validator(opts):
     )
 
 
-def load_json(the_input):
-    json_data = {}
+def load_data(the_input):
+    data = {}
+    is_file = False
     if os.path.isfile(the_input) and os.path.exists(the_input):
-        logger.debug('Loading JSON: input file found: %s' % the_input)
-        with open(the_input) as json_file:
-            json_data = json.load(json_file)
+        is_file = True
+        logger.debug('Input file found: %s' % the_input)
+        with open(the_input) as the_file:
+            data = the_file.read()
+    elif type(the_input) in [str]:
+        logger.debug('Input string found')
+        data = the_input
     else:
-        logger.debug('Loading JSON: input string found')
-        if type(the_input) in [str]:
-            json_data = json.loads(the_input)
+        logger.error('Cannot process input data type: %s' % type(the_input))
+
+    return data
+
+
+def load_json(the_input):
+    data = load_data(the_input)
+    json_data = {}
+    try:
+        json_data = json.loads(data)
+    except json.decoder.JSONDecodeError:
+        logger.error('JSON data not found!')
+
     return json_data
 
 
