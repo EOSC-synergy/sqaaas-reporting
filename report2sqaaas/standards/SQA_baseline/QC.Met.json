@@ -3,8 +3,8 @@
         "QC.Met01": {
             "description": "Is the software citable?",
             "evidence": {
-                "success": "Software metadata is present in the code",
-                "failure": "Software metadata is not present in the code"
+                "success": "Software metadata successfully validated",
+                "failure": "Software metadata failed to validate"
             },
             "requirement_level": "SHOULD"
         }
