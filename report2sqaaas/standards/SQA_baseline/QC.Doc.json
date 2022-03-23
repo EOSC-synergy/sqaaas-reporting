@@ -17,12 +17,20 @@
             "requirement_level": "MAY"
         },
         "QC.Doc02": {
-            "description": "Are docs written using a markup language?",
+            "description": "Are docs written using a text-plain markup language?",
             "evidence": {
                 "success": "Documentation written using <%s>",
                 "failure": "Documentation is not written using a markup language"
             },
             "requirement_level": "MUST"
+        },
+        "QC.Doc02.X": {
+            "description": "Are docs following a style for the %s markup language?",
+            "evidence": {
+                "success": "Docs are compliant with <%s> standard",
+                "failure": "Docs are not fully compliant with <%s> standard"
+            },
+            "requirement_level": "MAY"
         },
         "QC.Doc03": {
             "description": "Are docs available in a documentation hosting platform?",
