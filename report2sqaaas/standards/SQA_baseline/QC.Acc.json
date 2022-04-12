@@ -1,0 +1,13 @@
+
+{
+    "QC.Acc": {
+        "QC.Acc01": {
+            "description": "Is the source code managed with a Version Control System?",
+            "evidence": {
+                "success": "Source code uses Git for version control",
+                "failure": "Source code not managed with Git version control system"
+            },
+            "requirement_level": "MUST"
+        }
+    }
+}
