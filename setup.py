@@ -28,7 +28,8 @@ setup(
         'standards/SQA_baseline/QC.Lic.json',
         'standards/SQA_baseline/QC.Met.json',
         'standards/SQA_baseline/QC.Sec.json',
-        'standards/SQA_baseline/QC.Sty.json'
+        'standards/SQA_baseline/QC.Sty.json',
+        'standards/SQA_baseline/QC.Ver.json'
     ]},
     # python_requires='>=3.6, <4',
     install_requires=[
