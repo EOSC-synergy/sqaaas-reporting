@@ -143,8 +143,8 @@ def load_json(the_input):
     json_data = {}
     try:
         json_data = json.loads(data)
-    except json.decoder.JSONDecodeError:
-        logger.error('JSON data not found!')
+    except json.decoder.JSONDecodeError as e:
+        logger.error('Could not load JSON data: %s' % str(e))
 
     return json_data
 
