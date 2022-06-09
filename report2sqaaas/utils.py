@@ -59,20 +59,24 @@ class BaseValidator(abc.ABC):
                 raise NotImplementedError(_reason)
         return super().__init_subclass__(**kwargs)
 
-    def get_criterion(self):
-        """
-        Get the criterion associated with the given subcriterion.
+    def get_subcriterion(self):
+        """Get the subcriterion associated with the given criterion."""
+        matching_subcriterion = None
+        if not self.opts.subcriterion:
+            logger.error(
+                'No subcriteria defined in tooling metadata for '
+                'validator <%s>' % self.opts.validator
+            )
+        else:
+            subcriteria_list = self.opts.subcriterion
+            if type(self.opts.subcriterion) not in [list]:
+                subcriteria_list = [self.opts.subcriterion]
+            for subcriterion in subcriteria_list:
+                if subcriterion.find(self.opts.criterion) != -1:
+                    logger.debug('Found a matching criterion: %s' % criterion)
+                    matching_subcriterion = subcriterion
 
-        The subcriterion is passed as an input argument, and thus accessible
-        through self.opts.subcriterion
-        """
-        criterion = None
-        pattern = '(^(SvcQC|QC)\.[A-Z][a-z]{2})'
-        match = re.search(pattern, self.opts.subcriterion)
-        if match:
-            criterion = match.group(0)
-            logger.debug('Matching criterion found: %s' % criterion)
-        return criterion
+        return matching_subcriterion
 
     @staticmethod
     def populate_parser(parser):
