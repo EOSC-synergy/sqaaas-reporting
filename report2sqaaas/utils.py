@@ -62,13 +62,16 @@ class BaseValidator(abc.ABC):
     def get_subcriterion(self):
         """Get the subcriterion associated with the given criterion."""
         matching_subcriterion = None
-        if not self.opts.subcriterion:
+        try:
+            subcriteria_list = self.opts.subcriterion
+        except AttributeError as e:
             logger.error(
                 'No subcriteria defined in tooling metadata for '
-                'validator <%s>' % self.opts.validator
+                'validator <%s>: %s' % (
+                    self.opts.validator, str(e)
+                )
             )
         else:
-            subcriteria_list = self.opts.subcriterion
             if type(self.opts.subcriterion) not in [list]:
                 subcriteria_list = [self.opts.subcriterion]
             for subcriterion in subcriteria_list:
