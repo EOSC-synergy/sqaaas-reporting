@@ -76,7 +76,9 @@ class BaseValidator(abc.ABC):
                 subcriteria_list = [self.opts.subcriterion]
             for subcriterion in subcriteria_list:
                 if subcriterion.find(self.opts.criterion) != -1:
-                    logger.debug('Found a matching criterion: %s' % criterion)
+                    logger.debug(
+                        'Found a matching criterion: %s' % subcriterion
+                    )
                     matching_subcriterion = subcriterion
 
         return matching_subcriterion
