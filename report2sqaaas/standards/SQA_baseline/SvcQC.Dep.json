@@ -4,7 +4,7 @@
             "description": "Can the service be deployed automatically (e.g. via IaC solution)?",
             "evidence": {
                 "success": "The service is fully deployed using <%s> solution",
-                "failure": "The service failed to be deployed using <%s> solution",
+                "failure": "The service failed to be deployed using <%s> solution"
             },
             "requirement_level": "SHOULD"
         }
