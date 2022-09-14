@@ -163,7 +163,7 @@ def load_criterion_from_standard(criterion):
         os.path.dirname(__file__), 'standards/SQA_baseline'
     )
     data = None
-    if criterion.startswith('QC.'):
+    try:
         criterion_file = os.path.join(
             SW_BASELINE_PATH, '%s.json' % criterion
         )
@@ -171,7 +171,7 @@ def load_criterion_from_standard(criterion):
             criterion, criterion_file)
         )
         data = load_json(criterion_file)
-    else:
+    except Exception as e:
         logger.error(
             'Criterion <%s> not found in the available standards!' % criterion
         )
@@ -179,4 +179,5 @@ def load_criterion_from_standard(criterion):
     if data:
         data = data[criterion]
         logger.info('Criterion <%s> loaded successfully' % criterion)
+
     return data
