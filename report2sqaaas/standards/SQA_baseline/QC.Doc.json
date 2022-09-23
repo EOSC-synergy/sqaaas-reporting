@@ -6,6 +6,9 @@
                 "success": "Documentation managed using <git>",
                 "failure": "Documentation not managed through <git>"
             },
+	    "hint": (
+                "Place your documentation files in a Git repository."
+            ),
             "requirement_level": "MUST"
         },
         "QC.Doc01.1": {
@@ -14,6 +17,10 @@
                 "success": "Documentation resides in the same repository as code",
                 "failure": "Documentation resides in an individual repository, separated from code"
             },
+	    "hint": (
+	        "This subcriterion will succeed if the documentation files "
+		"exist on the same repository as the source code."
+	    ),
             "requirement_level": "MAY"
         },
         "QC.Doc02": {
@@ -22,6 +29,11 @@
                 "success": "Documentation written using <%s>",
                 "failure": "Documentation is not written using a markup language"
             },
+	    "hint": (
+	        "Existing documentation shall be writte in a text-plain markup language, "
+	        "as a requirement to adopt docs-as-code approach. Supported solutions in "
+	        "the SQAaaS are Markdown and reStructuredText"
+	    ),
             "requirement_level": "MUST"
         },
         "QC.Doc02.X": {

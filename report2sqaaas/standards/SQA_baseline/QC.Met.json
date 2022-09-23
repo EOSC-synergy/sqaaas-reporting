@@ -6,6 +6,15 @@
                 "success": "Software metadata successfully validated",
                 "failure": "Software metadata failed to validate"
             },
+	    "hint": (
+                "The two formats for software citation supported by SQAaaS "
+	        "are: 1) CodeMeta and 2) Citation File Format (CFF). While "
+		"CodeMeta provides you with a more comprehensive description, "
+	        "CFF is a more lightweight, good-enough approach to software "
+		"(and supported by GitHub) citation. Both provide tools to "
+		"easily generate a working citation file. Once having the "
+		"file, be sure to add it to the root path of your code repo."
+            ),
             "requirement_level": "SHOULD"
         }
     }

@@ -7,6 +7,11 @@
                 "success": "Source code uses Git for version control",
                 "failure": "Source code not managed with Git version control system"
             },
+	    hint: (
+	        "The source code shall be managed with Git and publicly available. "
+		"Please check https:// .. about how to start using Git solution in "
+	        "a social coding platform"
+	    ),
             "requirement_level": "MUST"
         }
     }
