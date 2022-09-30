@@ -7,6 +7,7 @@
                 "success": "Source code passes SAST checks",
                 "failure": "Found security weaknesses when performing SAST checks"
             },
+	    "hint": "",
             "requirement_level": "MUST"
         }
     }

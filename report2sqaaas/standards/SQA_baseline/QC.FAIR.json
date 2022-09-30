@@ -1,0 +1,13 @@
+
+{
+    "QC.FAIR": {
+        "QC.FAIR01": {
+            "description": "Is the data following FAIR principles?",
+            "evidence": {
+                "success": "Data complies with FAIR principles",
+                "failure": "Data is not compliant with FAIR principles"
+            },
+            "requirement_level": "SHOULD"
+        }
+    }
+}

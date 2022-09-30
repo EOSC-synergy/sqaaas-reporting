@@ -7,6 +7,7 @@
                 "failure": "Release tag <%s> found, but is not SemVer compliant",
                 "failure_no_tag": "No release tag found for the current version of the code"
             },
+	    "hint": "",
             "requirement_level": "SHOULD"
         }
     }
