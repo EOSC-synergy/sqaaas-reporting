@@ -7,6 +7,7 @@
                 "success": "%s files are compliant with <%s> standard",
                 "failure": "%s files are not fully compliant with <%s> standard"
             },
+	    "hint": "",
             "requirement_level": "MUST"
         }
     }
