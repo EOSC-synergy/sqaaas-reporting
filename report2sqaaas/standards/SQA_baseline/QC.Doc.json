@@ -6,9 +6,7 @@
                 "success": "Documentation managed using <git>",
                 "failure": "Documentation not managed through <git>"
             },
-	    "hint": (
-                "Place your documentation files in a Git repository."
-            ),
+	    "hint": "Place your documentation files in a Git repository",
             "requirement_level": "MUST"
         },
         "QC.Doc01.1": {
@@ -17,10 +15,7 @@
                 "success": "Documentation resides in the same repository as code",
                 "failure": "Documentation resides in an individual repository, separated from code"
             },
-	    "hint": (
-	        "This subcriterion will succeed if the documentation files "
-		"exist on the same repository as the source code."
-	    ),
+	    "hint": "This subcriterion will succeed if the documentation files exist on the same repository as the source code, e.g. under a <code>docs/</code> folder",
             "requirement_level": "MAY"
         },
         "QC.Doc02": {
@@ -29,11 +24,7 @@
                 "success": "Documentation written using <%s>",
                 "failure": "Documentation is not written using a markup language"
             },
-	    "hint": (
-	        "Existing documentation shall be writte in a text-plain markup language, "
-	        "as a requirement to adopt docs-as-code approach. Supported solutions in "
-	        "the SQAaaS are Markdown and reStructuredText"
-	    ),
+	    "hint": "Existing documentation shall be writte in a text-plain markup language, as a requirement to adopt a <a href=\"https://www.writethedocs.org/guide/docs-as-code/\" target=\"_blank\">docs-as-code</a> approach. SQAaaS supported languages are <a href=\"https://www.markdownguide.org/\" target=\"_blank\">Markdown</a> and <a href=\"https://docutils.sourceforge.io/rst.html\" target=\"_blank\">reStructuredText</a>",
             "requirement_level": "MUST"
         },
         "QC.Doc02.X": {
@@ -42,6 +33,7 @@
                 "success": "Docs are compliant with <%s> standard",
                 "failure": "Docs are not fully compliant with <%s> standard"
             },
+	    "hint": "When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on <a href=\"https://github.com/markdownlint/markdownlint/\" target=\"_blank\">markdownlint</a> for Markdown files and <a href=\"https://github.com/twolfson/restructuredtext-lint/\" target=\"_blank\"></a> for reStructuredText",
             "requirement_level": "MAY"
         },
         "QC.Doc03": {
@@ -50,6 +42,7 @@
                 "success": "Documentation is hosted in an online platform",
                 "failure": "Documentation is not hosted in an online platform"
             },
+	    "hint": 
             "requirement_level": "MUST"
         },
         "QC.Doc06.1": {
@@ -58,6 +51,7 @@
                 "success": "A README file is present in the code repository",
                 "failure": "A README file not present in the code repository"
             },
+	    "hint": "A README file presents your software to the audience interested in your software project. Several online sites simplify the task of creating the README file, such as <a href=\"https://www.makeareadme.com/\" target=\"_blank\">Make a README</a> or <a href=\"https://readme.so/\" target=\"_blank\">readme.so</a> sites. Be sure to add it to the code repository's root path",
             "requirement_level": "MUST"
         },
         "QC.Doc06.2": {
@@ -66,6 +60,7 @@
                 "success": "A CONTRIBUTING file is present in the code repository",
                 "failure": "A CONTRIBUTING file is not present in the code repository"
             },
+	    "hint": "A CONTRIBUTING file shall be present in the root path of the code repository describing the expected workflow to follow when adding contributions. Please check <a href=\"https://mozillascience.github.io/working-open-workshop/contributing/\" target=\"_blank\">Mozilla's guidelines</a> and <a href=\"https://github.com/github/docs/blob/main/CONTRIBUTING.md\" target=\"_blank\">GitHub's CONTRIBUTING.md example</a> to get inspired on how to write a good CONTRIBUTING file",
             "requirement_level": "MUST"
         },
         "QC.Doc06.3": {
@@ -74,6 +69,7 @@
                 "success": "A CODE_OF_CONDUCT file is present in the code repository",
                 "failure": "A CODE_OF_CONDUCT file is not present in the code repository"
             },
+	    "hint": "A CODE_OF_CONDUCT file sets the path for a constructive, respectful and positive atmosphere among all the contributors in your software project. Of course you can define your own, but in case you want to rely on external and widely-adopted code of conducts check out some of the most popular ones: <a href=\"https://contributor-covenant.org/\" target=\"_blank\">Contributor Covenant</a> or <a href=\"https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/\" target=\"_blank\">Citizen Code of Conduct</a>",
             "requirement_level": "MUST"
         }
     }
