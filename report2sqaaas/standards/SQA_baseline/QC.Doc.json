@@ -42,7 +42,7 @@
                 "success": "Documentation is hosted in an online platform",
                 "failure": "Documentation is not hosted in an online platform"
             },
-	    "hint": 
+	    "hint": "",
             "requirement_level": "MUST"
         },
         "QC.Doc06.1": {

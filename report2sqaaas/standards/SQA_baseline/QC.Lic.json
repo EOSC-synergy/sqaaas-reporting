@@ -6,14 +6,7 @@
                 "success": "An Open Source license found in the code repository: %s",
                 "failure": "No Open Source license found in the code repository"
             },
-	    "hint": (
-                "Your source code repository shall be distributed under an "
-		"open source license for this subcriterion to pass "
-		"successfully. Be sure to have a license file present in the "
-		"code repository. Allowed licenses are any of those approved "
-		"either by the Open Source Initiative and/or the .... Allowed "
-	        "file names are LICENSE, ..."	
-            ),
+	    "hint": "<p>Your source code repository shall be distributed under an open source license for this subcriterion to pass successfully. Be sure to have a license file present in the code repository matching the name <code>LICENSE</code> with optional extensions (depending on the format used): <code>[.md|.rst|.txt]</code>.</p><p>Valid licenses are any of those approved either by the <a href=\"https://opensource.org/licenses\" target=\"_blank\">Open Source Initiative</a> and/or the Free Software Foundation <a href=\"https://www.gnu.org/licenses/license-list.html\" target=\"_blank\"></a>. You can also check the <a href=\"https://choosealicense.com/\" target=\"_blank\">choosealicense.com</a> site</p>",
             "requirement_level": "MUST"
         },
         "QC.Lic01.1": {
@@ -22,12 +15,7 @@
                 "success": "LICENSE file is visible at the root path of the code repository: %s",
                 "failure": "LICENSE file is not placed at the root path of the code repository: %s"
             },
-	    "hint": (
-                "Most social coding platforms require the license file to "
-		"placed in the root path of the code repository, so it is "
-		"a good practice to default to this location. Allowed file "
-		"names are LICENSE .."
-	    ),
+	    "hint": "Most social coding platforms require the license file to placed in the root path of the code repository, so it is a good practice to use this location by default. Allowed file names are <code>LICENSE</code>, <code>LICENSE.md</code>, <code>LICENSE.rst</code>, <code>LICENSE.txt</code>",
             "requirement_level": "MUST"
         },
         "QC.Lic02": {
@@ -36,13 +24,7 @@
                 "success": "License <%s> is approved by the Open Source Initiative",
                 "failure": "License <%s> is not approved by the Open Source Initiative"
             },
-	    "hint": (
-                "The Open Source Initiative (OSI) sets out the requirements for software "
-		"to be legally declared as Open Source. The license in use shall be in the "
-		"list of OSI-approved licenses for this subcriterion to be successful. You "
-		"can check this list at https://..."	
-
-	    ),
+	    "hint": "The <a href=\"https://opensource.org/\" target=\"_blank\">Open Source Initiative (OSI)</a> sets out the requirements for software to be legally declared as Open Source. The license in use shall be in the list of <a href=\"https://opensource.org/license-list.html\" target=\"_blank\">OSI-approved licenses</a> for this criterion to be successful",
             "requirement_level": "MUST"
         },
         "QC.Lic02.1": {
@@ -51,12 +33,7 @@
                 "success": "License <%s> is listed under the Open Source Initiative popular category",
                 "failure": "License <%s> is not listed under the Open Source Initiative popular category"
             },
-	    "hint": (
-                "The Open Source Initiative (OSI) sets out the requirements for software "
-		"to be legally declared as Open Source. OSI provides a list of popular "
-		"licenses that shall match most of the demands. Please check the list of "
-		"popular licenses at https://..."	
-            ),
+	    "hint": "The Open Source Initiative (OSI) sets out the requirements for software to be legally declared as Open Source. OSI provides a list of popular licenses that shall match most of the demands. The license in use shall be in the list of <a href=\"https://opensource.org/license-list.html\" target=\"_blank\">OSI popular licenses</a> for this criterion to be successful",
             "requirement_level": "MAY"
         }
     }

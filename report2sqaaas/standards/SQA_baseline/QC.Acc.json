@@ -7,7 +7,7 @@
                 "success": "Source code uses Git for version control",
                 "failure": "Source code not managed with Git version control system"
             },
-	    hint: "The source code shall be managed with Git and remain publicly available for this criterion to be successful. Please check <a href=\"\">Pro Git</a> about how to get started using Git tool. Guidelines provided by the most popular social coding platforms (<a href=\"https://docs.github.com/get-started\">GitHub</a>, <a href=\"https://about.gitlab.com/get-started/\">GitLab</a>) are also a good starting point",
+	    "hint": "The source code shall be managed with Git and remain publicly available for this criterion to be successful. Please check <a href=\"https://git-scm.com/book/es/v2\" target=\"_blank\">Pro Git</a> docs about how to get started using Git tool. Guidelines provided by the most popular social coding platforms (<a href=\"https://docs.github.com/get-started\" target=\"_blank\">GitHub</a>, <a href=\"https://about.gitlab.com/get-started/\" target=\"_blank\">GitLab</a>) are also a good starting point",
             "requirement_level": "MUST"
         }
     }
