@@ -1,11 +1,28 @@
 {
     "QC.Ver": {
-        "QC.Ver01": {
-            "description": "Is the release compliant with Semantic Versioning (SemVer) specification?",
+        "QC.Ver01.0": {
+            "description": "Are tags being used for releasing software",
             "evidence": {
-                "success": "Current release tag <%s> is SemVer compliant",
-                "failure": "Release tag <%s> found, but is not SemVer compliant",
-                "failure_no_tag": "No release tag found for the current version of the code"
+                "success": "The code repository uses tags for releasing new software versions",
+                "failure": "The code repository does not use tags for releasing new software versions"
+            },
+	    "hint": "",
+            "requirement_level": "MUST"
+        },
+        "QC.Ver01": {
+            "description": "Is the latest release compliant with Semantic Versioning (SemVer) specification?",
+            "evidence": {
+                "success": "Latest release tag <%s> is SemVer compliant",
+                "failure": "Latest release tag <%s> found, but is not SemVer compliant"
+            },
+	    "hint": "",
+            "requirement_level": "MUST"
+        },
+        "QC.Ver02": {
+            "description": "Are all release tags with Semantic Versioning (SemVer) specification?",
+            "evidence": {
+                "success": "All release tags are SemVer compliant",
+                "failure": "Not all release tags are SemVer compliant"
             },
 	    "hint": "",
             "requirement_level": "SHOULD"
