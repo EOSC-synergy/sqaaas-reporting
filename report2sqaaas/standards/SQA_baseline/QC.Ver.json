@@ -6,7 +6,7 @@
                 "success": "The code repository uses tags for releasing new software versions",
                 "failure": "The code repository does not use tags for releasing new software versions"
             },
-	    "hint": "Git tags are a convenient way to release software. This subcriterion checks if any git tag is present in the code history. More info on tagging can be checked in <a href=\"https://git-scm.com/book/en/v2/Git-Basics-Tagging\" target=\"_blank\"></a>",
+	    "hint": "Git tags are a convenient way to release software. This subcriterion checks if any git tag is present in the code history. More info on it-scm.com/book/en/v2/Git-Basics-Tagging\" target=\"_blank\">git tagging</a>",
             "requirement_level": "MUST"
         },
         "QC.Ver01": {
