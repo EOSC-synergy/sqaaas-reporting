@@ -7,7 +7,7 @@
                 "success": "%s files are compliant with <%s> standard",
                 "failure": "%s files are not fully compliant with <%s> standard"
             },
-	    "hint": "",
+	    "hint": "Please check & solve the security weaknesses found by the linter tool",
             "requirement_level": "MUST"
         }
     }

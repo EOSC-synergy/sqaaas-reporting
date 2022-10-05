@@ -6,7 +6,7 @@
                 "success": "The code repository uses tags for releasing new software versions",
                 "failure": "The code repository does not use tags for releasing new software versions"
             },
-	    "hint": "",
+	    "hint": "Git tags are a convenient way to release software. This subcriterion checks if any git tag is present in the code history. More info on tagging can be checked in <a href=\"https://git-scm.com/book/en/v2/Git-Basics-Tagging\" target=\"_blank\"></a>",
             "requirement_level": "MUST"
         },
         "QC.Ver01": {
@@ -15,7 +15,7 @@
                 "success": "Latest release tag <%s> is SemVer compliant",
                 "failure": "Latest release tag <%s> found, but is not SemVer compliant"
             },
-	    "hint": "",
+	    "hint": "Latest tag must be compliant with <a href=\"https://semver.org\" target=\"_blank\">SemVer specification</a>",
             "requirement_level": "MUST"
         },
         "QC.Ver02": {
@@ -24,7 +24,7 @@
                 "success": "All release tags are SemVer compliant",
                 "failure": "Not all release tags are SemVer compliant"
             },
-	    "hint": "",
+	    "hint": "Existent release tags shall be <a href=\"https://semver.org\" target=\"_blank\">SemVer</a> compliant for this subcriterion to be successful",
             "requirement_level": "SHOULD"
         }
     }
