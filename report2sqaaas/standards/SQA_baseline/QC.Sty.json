@@ -4,7 +4,7 @@
             "description": "Is the software product following a style standard for {lang_name} files?",
             "evidence": {
                 "success": "{lang_name} files are compliant with {tool_name} standard",
-                "failure": "{lang_name}{lang_name} files are not fully compliant with {tool_name} standard"
+                "failure": "{lang_name} files are not fully compliant with {tool_name} standard"
             },
 	    "hint": "Please check & solve the security weaknesses found by the linter tool",
             "requirement_level": "MUST"
