@@ -16,7 +16,7 @@
                 "failure": "Latest release tag <%s> found, but is not SemVer compliant"
             },
 	    "hint": "Latest tag must be compliant with <a href=\"https://semver.org\" target=\"_blank\">SemVer specification</a>",
-            "requirement_level": "MUST"
+            "requirement_level": "SHOULD"
         },
         "QC.Ver02": {
             "description": "Are all release tags with Semantic Versioning (SemVer) specification?",
