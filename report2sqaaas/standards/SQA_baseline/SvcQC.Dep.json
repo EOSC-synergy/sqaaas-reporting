@@ -6,6 +6,7 @@
                 "success": "The service is fully deployed using <%s> solution",
                 "failure": "The service failed to be deployed using <%s> solution"
             },
+	    "hint": "<p>SQAaaS relies on a code repository that contains the recipes for the deployment of the computing services. As such, you need to provide the repo and (relative) path to the main configuration file.</p><p>The current set of deployment tools supported by the SQAaaS are: <a href=\"https://www.grycap.upv.es/im\" target=\"_blank\">Infrastructure Manager (IM)</a> and <a href=\"https://www.grycap.upv.es/ec3/index.html\" target=\"_blank\">Elastic Cloud Computing Cluster (EC3)</a>",
             "requirement_level": "SHOULD"
         }
     }
