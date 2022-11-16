@@ -12,8 +12,8 @@
         "QC.Ver01": {
             "description": "Is the latest release compliant with Semantic Versioning (SemVer) specification?",
             "evidence": {
-                "success": "Latest release tag <%s> is SemVer compliant",
-                "failure": "Latest release tag <%s> found, but is not SemVer compliant"
+                "success": "Latest release tag {latest_tag} is SemVer compliant",
+                "failure": "Latest release tag {latest_tag} found, but is not SemVer compliant"
             },
 	    "hint": "Latest tag must be compliant with <a href=\"https://semver.org\" target=\"_blank\">SemVer specification</a>",
             "requirement_level": "SHOULD"

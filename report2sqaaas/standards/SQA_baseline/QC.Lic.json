@@ -3,7 +3,7 @@
         "QC.Lic01": {
             "description": "Is code licensed to be freely used, modified and distributed by others?",
             "evidence": {
-                "success": "An Open Source license found in the code repository: %s",
+                "success": "An Open Source license found in the code repository: {license_type}",
                 "failure": "No Open Source license found in the code repository"
             },
 	    "hint": "<p>Your source code repository shall be distributed under an open source license for this subcriterion to pass successfully. Be sure to have a license file present in the code repository matching the name <code>LICENSE</code> with optional extensions (depending on the format used): <code>[.md|.rst|.txt]</code>.</p><p>Valid licenses are any of those approved either by the <a href=\"https://opensource.org/licenses\" target=\"_blank\">Open Source Initiative</a> and/or the Free Software Foundation <a href=\"https://www.gnu.org/licenses/license-list.html\" target=\"_blank\"></a>. You can also check the <a href=\"https://choosealicense.com/\" target=\"_blank\">choosealicense.com</a> site</p>",
@@ -12,8 +12,8 @@
         "QC.Lic01.1": {
             "description": "Is LICENSE file placed in the root path of the code repository?",
             "evidence": {
-                "success": "LICENSE file is visible at the root path of the code repository: %s",
-                "failure": "LICENSE file is not placed at the root path of the code repository: %s"
+                "success": "LICENSE file is visible at the root path of the code repository: {license_file}",
+                "failure": "LICENSE file is not placed at the root path of the code repository: {license_file}"
             },
 	    "hint": "Most social coding platforms require the license file to placed in the root path of the code repository, so it is a good practice to use this location by default. Allowed file names are <code>LICENSE</code>, <code>LICENSE.md</code>, <code>LICENSE.rst</code>, <code>LICENSE.txt</code>",
             "requirement_level": "MUST"
@@ -21,8 +21,8 @@
         "QC.Lic02": {
             "description": "Does the code use a license approved by Open Source Initiative?",
             "evidence": {
-                "success": "License <%s> is approved by the Open Source Initiative",
-                "failure": "License <%s> is not approved by the Open Source Initiative"
+                "success": "License {license_type} is approved by the Open Source Initiative",
+                "failure": "License {license_type} is not approved by the Open Source Initiative"
             },
 	    "hint": "The <a href=\"https://opensource.org/\" target=\"_blank\">Open Source Initiative (OSI)</a> sets out the requirements for software to be legally declared as Open Source. The license in use shall be in the list of <a href=\"https://opensource.org/license-list.html\" target=\"_blank\">OSI-approved licenses</a> for this criterion to be successful",
             "requirement_level": "MUST"
@@ -30,8 +30,8 @@
         "QC.Lic02.1": {
             "description": "Does the code use an Open Source Initiative's popular-recognized license?",
             "evidence": {
-                "success": "License <%s> is listed under the Open Source Initiative popular category",
-                "failure": "License <%s> is not listed under the Open Source Initiative popular category"
+                "success": "License {license_type} is listed under the Open Source Initiative popular category",
+                "failure": "License {license_type} is not listed under the Open Source Initiative popular category"
             },
 	    "hint": "The Open Source Initiative (OSI) sets out the requirements for software to be legally declared as Open Source. OSI provides a list of popular licenses that shall match most of the demands. The license in use shall be in the list of <a href=\"https://opensource.org/license-list.html\" target=\"_blank\">OSI popular licenses</a> for this criterion to be successful",
             "requirement_level": "MAY"
