@@ -1,4 +1,10 @@
 # report2sqaaas
+[![SQAaaS badge shields.io](https://img.shields.io/badge/sqaaas%20software-silver-lightgrey)](https://api.eu.badgr.io/public/assertions/Dzr7HNIJSv6mhaGmvb27Fg "SQAaaS silver badge achieved")
+
+#### Achievements 
+[![SQAaaS badge](https://github.com/EOSC-synergy/SQAaaS/raw/master/badges/badges_150x116/badge_software_silver.png)](https://api.eu.badgr.io/public/assertions/Dzr7HNIJSv6mhaGmvb27Fg "SQAaaS silver badge achieved")
+
+
 The reporting tool for the SQAaaS platform.
 
 ## Motivation
