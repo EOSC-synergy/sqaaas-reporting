@@ -1,0 +1,22 @@
+
+{
+    "QC.FAIR": {
+        "RDA_F1_01M": {
+            "description": "Is the metadata identified by a persistent identifier?",
+            "evidence": {
+                "success": "Metadata is identified by a persistent identifier",
+                "failure": "Metadata is not identified by a persistent identifier"
+            },
+	    "hint": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>The persistence of an identifier is determined by the commitment of the organisation that assigns and manages the identifier, so the evaluation of this indicator needs to take into accout the persistence policy of that orgaisation. Such a commitment could be expressed by a university or research institute, by a research infrastructure or by an organisation that issues formal identifiers, such as the International DOI Foundation. More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_F1_01D": {
+            "description": "Is the data identified by a persistent identifier?",
+            "evidence": {
+                "success": "Data is identified by a persistent identifier",
+                "failure": "Data is not identified by a persistent identifier"
+            },
+	    "hint": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>The persistence of an identifier is determined by the commitment of the organisation that assigns and manages the identifier, so the evaluation of this indicator needs to take into accout the persistence policy of that orgaisation. Such a commitment could be expressed by a university or research institute, by a research infrastructure or by an organisation that issues formal identifiers, such as the International DOI Foundation. More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        }
+}
