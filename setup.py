@@ -25,7 +25,6 @@ setup(
     package_data={'report2sqaaas': [
         'standards/SQA_baseline/QC.Acc.json',
         'standards/SQA_baseline/QC.Doc.json',
-        'standards/SQA_baseline/QC.FAIR.json',
         'standards/SQA_baseline/QC.Lic.json',
         'standards/SQA_baseline/QC.Met.json',
         'standards/SQA_baseline/QC.Sec.json',
