@@ -159,8 +159,12 @@ def load_json(the_input):
 
 
 def load_criterion_from_standard(criterion):
+    _standard_path = 'standards/SQA_baseline'
+    if criterion.find('QC.FAIR') == 0:
+        _standard_path = 'standards/RDA_maturity_model'
+
     SW_BASELINE_PATH = os.path.join(
-        os.path.dirname(__file__), 'standards/SQA_baseline'
+        os.path.dirname(__file__), _standard_path
     )
     data = None
     try:
