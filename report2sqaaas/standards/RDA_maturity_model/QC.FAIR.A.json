@@ -9,6 +9,105 @@
             },
 	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
             "requirement_level": "SHOULD"
+        },
+        "RDA_A1_02M": {
+            "description": "Metadata can be accessed manually (i.e. with human intervention)",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_02D": {
+            "description": "Data can be accessed manually (i.e. with human intervention)",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_03M": {
+            "description": "Metadata identifier resolves to a metadata record",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_03D": {
+            "description": "Data identifier resolves to a digital object",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_04M": {
+            "description": "Metadata is accessed through standardised protocol",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_04D": {
+            "description": "Data is accessible through standardised protocol",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_05D": {
+            "description": "Data can be accessed automatically (i.e. by a computer program)",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_A1_1_01M": {
+            "description": "Metadata is accessible through a free access protocol",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_A1_1_01D": {
+            "description": "Data is accessible through a free access protocol",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_A1_2_01D": {
+            "description": "Data is accessible through an access protocol that supports authentication and authorisation",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
+        },
+        "RDA_A2_01M": {
+            "description": "Metadata is guaranteed to remain available after data is no longer available",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
         }
     }
 }

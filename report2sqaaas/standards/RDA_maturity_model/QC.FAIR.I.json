@@ -2,13 +2,112 @@
 {
     "QC.FAIR.I": {
         "RDA_I1_01M": {
-            "description": "",
+            "description": "Metadata uses knowledge representation expressed in standardised format",
             "evidence": {
                 "success": "",
                 "failure": ""
             },
 	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
             "requirement_level": "SHOULD"
+        },
+        "RDA_I1_01D": {
+            "description": "Data uses knowledge representation expressed in standardised format",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_I1_02M": {
+            "description": "Metadata uses machine-understandable knowledge representation",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_I1_02D": {
+            "description": "Data uses machine-understandable knowledge representation",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_I2_01M": {
+            "description": "Metadata uses FAIR-compliant vocabularies",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_I2_01D": {
+            "description": "Data uses FAIR-compliant vocabularies",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
+        },
+        "RDA_I3_01M": {
+            "description": "Metadata includes references to other metadata",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_I3_01D": {
+            "description": "Data includes references to other data",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
+        },
+        "RDA_I3_02M": {
+            "description": "Metadata includes references to other data",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
+        },
+        "RDA_I3_02D": {
+            "description": "Data includes qualified references to other data",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
+        },
+        "RDA_I3_03M": {
+            "description": "Metadata includes qualified references to other metadata",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_I3_04M": {
+            "description": "Metadata include qualified references to other data",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
         }
     }
 }

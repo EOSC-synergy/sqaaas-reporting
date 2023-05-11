@@ -2,13 +2,94 @@
 {
     "QC.FAIR.R": {
         "RDA_R1_01M": {
-            "description": "Is the metadata identified by a persistent identifier?",
+            "description": "Plurality of accurate and relevant attributes are provided to allow reuse",
             "evidence": {
                 "success": "",
                 "failure": ""
             },
 	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
             "requirement_level": "MUST"
+        },
+        "RDA_R1_1_01M": {
+            "description": "Metadata includes information about the licence under which the data can be reused",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_1_02M": {
+            "description": "Metadata refers to a standard reuse licence.",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_R1_1_03M": {
+            "description": "Metadata refers to a machine-understandable reuse licence",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_R1_2_01M": {
+            "description": "Metadata includes provenance information according to community-specific standards",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_R1_2_02M": {
+            "description": "Metadata includes provenance information according to a cross-community language",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MAY"
+        },
+        "RDA_R1_3_01M": {
+            "description": "Metadata complies with a community standard",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_3_01D": {
+            "description": "Data complies with a community standard",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_3_02M": {
+            "description": "Metadata is expressed in compliance with a machine-understandable community standard",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_3_02D": {
+            "description": "Data is expressed in compliance with a machine-understandable community standard",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
         }
     }
 }
