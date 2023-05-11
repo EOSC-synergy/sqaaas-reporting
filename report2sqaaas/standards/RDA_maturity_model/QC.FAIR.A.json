@@ -2,111 +2,123 @@
 {
     "QC.FAIR.A": {
         "RDA_A1_01M": {
-            "description": "Metadata contains information to enable the user to get access to the data",
+            "description": "The indicator refers to the information that is necessary to allow the requester to gain access to the digital object. It is about (i) restrictions to access the data (i.e. access to the data may be open, restricted or closed), (ii) the actions to be taken by a person who is interested to access the data, in particular when the data has not been published on the Web or (iii) specifications that the resources are available through specified authentication/authorisation system",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata contains information to enable the user to get access to the data",
+                "failure": "Metadata does not contain information to enable the user to get access to the data"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Check metadata record for access info and Parse HTML in order to find the potential file(s) in order to find the digital object.",
             "requirement_level": "SHOULD"
         },
         "RDA_A1_02M": {
-            "description": "Metadata can be accessed manually (i.e. with human intervention)",
+            "description": "The indicator refers to any human interactions that are needed if the requester wants  to access metadata.",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata can be accessed manually (i.e. with human intervention)",
+                "failure": "Metadata cannot be accessed manually (i.e. with human intervention)"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Look for the metadata terms in HTML in order to know if they can be accessed manually",
             "requirement_level": "MUST"
         },
         "RDA_A1_02D": {
-            "description": "Data can be accessed manually (i.e. with human intervention)",
+            "description": "The indicator refers to any human interactions that are needed if the requester wants to access the digital object",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data can be accessed manually (i.e. with human intervention)",
+                "failure": "Data cannot be accessed manually (i.e. with human intervention)"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks the presence of an access metadata term",
             "requirement_level": "MUST"
         },
         "RDA_A1_03M": {
-            "description": "Metadata identifier resolves to a metadata record",
+            "description": "This indicator is about the resolutionof the metadata identifier",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata identifier resolves to a metadata record",
+                "failure": "Metadata identifier does not resolve to a metadata record"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Converts identifier to URL and solves it to look for the metadata terms in HTML in order to know if they can be accessed manually",
             "requirement_level": "MUST"
         },
         "RDA_A1_03D": {
-            "description": "Data identifier resolves to a digital object",
+            "description": "This indicator is about the resolution of the identifier that identifies the digital object. The identifier assigned to the data should be associated with a formally defined retrieval/resolution mechanism that enables access to the digital object or provides access instructions for access in the case of human-mediated access",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data identifier resolves to a digital object",
+                "failure": "Data identifier does not resolve to a digital object"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Converts identifier to URL and solves it to look for digital objects. Once found, it checks if the digital object can be downloaded",
             "requirement_level": "MUST"
         },
         "RDA_A1_04M": {
-            "description": "Metadata is accessed through standardised protocol",
+            "description": "",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata is accessed through standardised protocol",
+                "failure": "Metadata is not accessed through standardised protocol"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks the protocol to access metadata (OAI-OMH, API..)",
             "requirement_level": "MUST"
         },
         "RDA_A1_04D": {
-            "description": "Data is accessible through standardised protocol",
+            "description": "The indicator concerns the protocol through which the digital object is accessed and requires the protocol to be defined in a standard",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data is accessible through standardised protocol",
+                "failure": "Data is not accessible through standardised protocol"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Thanks to the implemented test RDA-A1.03D, if the digital object can be downloaded, it can be done usting HTTP protocol",
             "requirement_level": "MUST"
         },
         "RDA_A1_05D": {
-            "description": "Data can be accessed automatically (i.e. by a computer program)",
+            "description": "The indicator refers to automated interactions between machines to access digital objects",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data can be accessed automatically (i.e. by a computer program)",
+                "failure": "Data cannot be accessed automatically (i.e. by a computer program)"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Check certain ways to access data automatically. OAI-PMH does not support automatic access to data.",
             "requirement_level": "SHOULD"
         },
         "RDA_A1_1_01M": {
-            "description": "Metadata is accessible through a free access protocol",
+            "description": "The indicator tests that the protocol that enables the requester to access metadata can be freely used",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata is accessible through a free access protocol",
+                "failure": "Metadata is not accessible through a free access protocol"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks the plugin access protocols",
             "requirement_level": "MUST"
         },
         "RDA_A1_1_01D": {
-            "description": "Data is accessible through a free access protocol",
+            "description": "The indicator requires that the protocol can be used free of charge which facilitates unfettered acces",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data is accessible through a free access protocol",
+                "failure": "Data is not accessible through a free access protocol"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "With RDA-A1.3D the HTTP protocol to access the data is tested.",
             "requirement_level": "SHOULD"
         },
         "RDA_A1_2_01D": {
-            "description": "Data is accessible through an access protocol that supports authentication and authorisation",
+            "description": "The indicator requires that if the data or local environment indicates a degree of additional protection then the access protocol must support authentication and authorisation of people and/or machines",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data is accessible through an access protocol that supports authentication and authorisation",
+                "failure": "Data is not accessible through an access protocol that supports authentication and authorisation"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test is implemented for each plugin. In case of metadata (note this indicator refers only to data), the de-facto access protocol is OAI-PMH, with no authorization/authentication requirements.",
             "requirement_level": "MAY"
         },
         "RDA_A2_01M": {
-            "description": "Metadata is guaranteed to remain available after data is no longer available",
+            "description": "The indicator intends to verify that information about a digital object is still available after the object has been deleted or otherwise has become unavailable",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata is guaranteed to remain available after data is no longer available.",
+                "failure": "Metadata is not guaranteed to remain available after data is no longer available."
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Metadata retention and preservation policies depend on the authority where this digital object is stored.",
             "requirement_level": "MUST"
         }
     }

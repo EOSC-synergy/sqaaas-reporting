@@ -2,66 +2,73 @@
 {
     "QC.FAIR.F": {
         "RDA_F1_01M": {
-            "description": "Is the metadata identified by a persistent identifier?",
+            "description": "This indicator evaluates whether or not the metadata is identified by a persistent identifier",
             "evidence": {
                 "success": "Metadata is identified by a persistent identifier",
                 "failure": "Metadata is not identified by a persistent identifier"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>The persistence of an identifier is determined by the commitment of the organisation that assigns and manages the identifier, so the evaluation of this indicator needs to take into accout the persistence policy of that organisation. Such a commitment could be expressed by a university or research institute, by a research infrastructure or by an organisation that issues formal identifiers, such as the International DOI Foundation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>The persistence of an identifier is determined by the commitment of the organisation that assigns and manages the identifier, so the evaluation of this indicator needs to take into accout the persistence policy of that organisation. Such a commitment could be expressed by a university or research institute, by a research infrastructure or by an organisation that issues formal identifiers, such as the International DOI Foundation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Search within a predefined list of potential metadata terms to identify the metadata (<em>dc.identifier.uri</em> and <em>dc.identifier.doi</em>) if any information is available.",
             "requirement_level": "MUST"
         },
         "RDA_F1_01D": {
-            "description": "Is the data identified by a persistent identifier?",
+            "description": "This indicator evaluates whether or not the data is identified by a persistent identifier",
             "evidence": {
                 "success": "Data is identified by a persistent identifier",
                 "failure": "Data is not identified by a persistent identifier"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>The persistence of an identifier is determined by the commitment of the organisation that assigns and manages the identifier, so the evaluation of this indicator needs to take into accout the persistence policy of that organisation. Such a commitment could be expressed by a university or research institute, by a research infrastructure or by an organisation that issues formal identifiers, such as the International DOI Foundation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>The persistence of an identifier is determined by the commitment of the organisation that assigns and manages the identifier, so the evaluation of this indicator needs to take into accout the persistence policy of that organisation. Such a commitment could be expressed by a university or research institute, by a research infrastructure or by an organisation that issues formal identifiers, such as the International DOI Foundation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Search within a predefined list of potential metadata terms (<em>dc.identifier.uri</em>, <em>dc.identifier.doi</em> and <em>dc.relation.publisherversion</em>) to identify the data if any information is available.",
             "requirement_level": "MUST"
         },
         "RDA_F1_02M": {
-            "description": "Is the data identified by a global identifier?",
+            "description": "The  indicator serves to evaluate whether the identifier of the metadata is globally unique, i.e. that there are no two identical identifiers that identify different metadata records",
             "evidence": {
-                "success": "Data is identified by a global identifier",
-                "failure": "Data is not identified by a global identifier"
+                "success": "Data is identified by a globally unique identifier",
+                "failure": "Data is not identified by a globally unique identifier"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>Global uniqueness of identifiers should be evaluated based on a description of how identifiers are assigned. Such a description should make it clear that the mechanism for assigning identifiers cannot possibly assign the same identifier to dif ferent resources, or assign an identifier that has already been assigned via  some  other  mechanism/organisation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>Global uniqueness of identifiers should be evaluated based on a description of how identifiers are assigned. Such a description should make it clear that the mechanism for assigning identifiers cannot possibly assign the same identifier to dif ferent resources, or assign an identifier that has already been assigned via  some  other  mechanism/organisation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks the type of the identifiers thanks to the idutils package. It identifies valid identifiers. If it is not a persistent identifier (like an URL), the test fails",
             "requirement_level": "MUST"
         },
         "RDA_F1_02D": {
-            "description": "Is the data identified by a persistent identifier?",
+            "description": "The  indicator serves to evaluate whether the identifier of the data is globally unique, i.e. that there are no two people that would use that same identifier for two different digital objects",
             "evidence": {
                 "success": "Data is identified by a global identifier",
                 "failure": "Data is not identified by a global identifier"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>Global uniqueness of identifiers should beevaluated based on a description of how identifiers are assigned. Such a description should make it clear that the mechanism for assigning identifiers cannot possibly assign the same identifier to different resources or assign an identifier that has already been assigned via some other mechanism/organisation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F1 (meta)data are assigned a globally unique and eternally persistent identifier.</em><p>Global uniqueness of identifiers should beevaluated based on a description of how identifiers are assigned. Such a description should make it clear that the mechanism for assigning identifiers cannot possibly assign the same identifier to different resources or assign an identifier that has already been assigned via some other mechanism/organisation.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "If the repository/system where the digital object is stored has both data and metadata integrated, this method only needs to call RDA-F1-02M. Otherwise, it needs to be re-defined.",
             "requirement_level": "MUST"
         },
         "RDA_F2_01M": {
-            "description": "Is metadata rich enough to allow discovery",
+            "description": "The indicator is about the presence of metadata, but also about how much metadata is provided and how well the provided metadata supports discovery",
             "evidence": {
                 "success": "Rich metadata is provided to allow discovery",
-                "failure": "Metadata provided does not allow proper discovery"
+                "failure": "Rich metadata is not provided to allow discovery"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F2: Data are  described with rich metadata</em>.<p>The indicator is about the presence of metadata, but also about how much metadata is provided and how well the provided metadata supports discovery.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F2: Data are  described with rich metadata</em>.<p>The indicator is about the presence of metadata, but also about how much metadata is provided and how well the provided metadata supports discovery.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Two different tests to evaluate generic and disciplinar metadata if needed. Check if all the Dublin Core terms are OK. For disciplinar metadata, this test should be more complex. For example, for multi-domain repositories, Dublin Core can be considered OK, but it can be extended to check other community metadata formats.",
             "requirement_level": "MUST"
         },
         "RDA_F3_01M": {
-            "description": "Does the metadata include the identifier for the data?",
+            "description": "The indicator deals with the inclusion of the ref erence(i.e. the identifier) of the digital object in the metadata so that the digital object can be accessed",
             "evidence": {
                 "success": "Metadata includes the identifier for the data",
-                "failure": "Metadata does not include the identifier for the dat"
+                "failure": "Metadata does not include the identifier for the data"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F3: Metadata clearly and explicitly include the identifier of the data they describe.</em><p>The indicator deals with the inclusion of the ref erence(i.e. the identifier) of the digital object in the metadata so that the digital object can be accessed.</p><p>This indicator can be evaluated by verifying that the identifier of the data is included in the metadata element that is specified for that purpose in the metadata standard used, for example in an \"about\" or \"describes\" predicate, or a Link Relation16such as \"describes\"/\"describedBy\".</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F3: Metadata clearly and explicitly include the identifier of the data they describe.</em><p>The indicator deals with the inclusion of the ref erence(i.e. the identifier) of the digital object in the metadata so that the digital object can be accessed.</p><p>This indicator can be evaluated by verifying that the identifier of the data is included in the metadata element that is specified for that purpose in the metadata standard used, for example in an \"about\" or \"describes\" predicate, or a Link Relation16such as \"describes\"/\"describedBy\".</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Check the metadata term that identifies the object (<em>dc.identifier.doi</em> and <em>dc.relation.publisherversion</em>)",
             "requirement_level": "MUST"
         },
         "RDA_F4_01M": {
-            "description": "Can metadata be harvested and indexed?",
+            "description": "The indicator tests whether the metadata is offered in such a way that it can be indexed",
             "evidence": {
-                "success": "Metadata can be harvested and indexed",
-                "failure": "Metadata cannot be harvested and indexed"
+                "success": "Metadata is offered in such a way that it can be harvested and indexed",
+                "failure": "Metadata is not offered in such a way that it can be harvested and indexed"
             },
-	    "hint": "This indicator is linked to the following principle: <em>F4: (Meta)data are registered or indexed in a searchable resource.</em><p>The indicator tests whether the metadata is offered in such a way that it can be indexed. In some cases, metadata could be provided together with the data to a  local institutional repository or to  a  domain-specific or regional portal, or metadata could be included in a landing page where it can be harvested by a search engine. The indicator remains broad enough on purpose not to limit the way how and by whom the harvesting and indexing of the data might be done.</p><p>This indicator can be evaluated by verifying that the metadata is made available for indexing. This is the case when the metadata is in fact harvested and indexed, for example in a general search engine or in a more restricted index, such as an institutional repository or a discipline-specific portal.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "This indicator is linked to the following principle: <em>F4: (Meta)data are registered or indexed in a searchable resource.</em><p>The indicator tests whether the metadata is offered in such a way that it can be indexed. In some cases, metadata could be provided together with the data to a  local institutional repository or to  a  domain-specific or regional portal, or metadata could be included in a landing page where it can be harvested by a search engine. The indicator remains broad enough on purpose not to limit the way how and by whom the harvesting and indexing of the data might be done.</p><p>This indicator can be evaluated by verifying that the metadata is made available for indexing. This is the case when the metadata is in fact harvested and indexed, for example in a general search engine or in a more restricted index, such as an institutional repository or a discipline-specific portal.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks if the metadata can be harvested via OAI-PMH",
             "requirement_level": "MUST"
         }
     }

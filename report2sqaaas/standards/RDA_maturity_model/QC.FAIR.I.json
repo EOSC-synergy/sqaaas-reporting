@@ -2,111 +2,123 @@
 {
     "QC.FAIR.I": {
         "RDA_I1_01M": {
-            "description": "Metadata uses knowledge representation expressed in standardised format",
+            "description": "The indicator serves to determine that an appropriate standard is used to express knowledge,",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata uses knowledge representation expressed in standardised format",
+                "failure": "Metadata does not use knowledge representation expressed in standardised format"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks metadata terms including controlled vocabulary information. So far, it checks GEONAMES, Library of Congress Subject Headings and ORCID, but it's being extended.",
             "requirement_level": "SHOULD"
         },
         "RDA_I1_01D": {
-            "description": "Data uses knowledge representation expressed in standardised format",
+            "description": "The indicator serves to determine that an appropriate standard is used to express knowledge, in particular the data model and format",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data uses knowledge representation expressed in standardised format",
+                "failure": "Data does not use knowledge representation expressed in standardised format"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "It checks that data format is within a list of accepted standards. It can be defined by each system/repository within their plugins. The generic plugin accepts: [\"pdf\", \"csv\", \"jpg\", \"jpeg\", \"nc\", \"hdf\", \"mp4\", \"mp3\", \"wav\", \"doc\", \"txt\", \"xls\", \"xlsx\", \"sgy\",\"zip\"]",
             "requirement_level": "SHOULD"
         },
         "RDA_I1_02M": {
-            "description": "Metadata uses machine-understandable knowledge representation",
+            "description": "This indicator focuses on the machine-understandability aspect of the metadata",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata uses machine-understandable knowledge representation",
+                "failure": "Metadata does not use machine-understandable knowledge representation"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks, via OAI-PMH, if the metadata can be retrieved in a format like RDF",
             "requirement_level": "SHOULD"
         },
         "RDA_I1_02D": {
-            "description": "Data uses machine-understandable knowledge representation",
+            "description": "This indicator focuses on the machine-understandability aspect of the data. This means that data should be readable and thus interoperable for machines without any requirements such as specific translators or mapping",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data uses machine-understandable knowledge representation",
+                "failure": "Data does not use machine-understandable knowledge representation"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin",
             "requirement_level": "SHOULD"
         },
         "RDA_I2_01M": {
-            "description": "Metadata uses FAIR-compliant vocabularies",
+            "description": "The indicator requires the vocabulary used for the metadata to conform to the FAIR principles, and at least be documented and resolvable using globally unique and persistent identifier",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata uses FAIR-compliant vocabularies",
+                "failure": "Metadata does not use FAIR-compliant vocabularies"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "If the digital object includes information in a controlled vocabulary, it checks if the controlled vocabulary has a persistent identifier",
             "requirement_level": "SHOULD"
         },
         "RDA_I2_01D": {
-            "description": "Data uses FAIR-compliant vocabularies",
+            "description": "The indicator requires the controlled vocabulary used for the data to conform to the FAIR principles, and at least be documented and resolvable using globally unique and persistent identifiers",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data uses FAIR-compliant vocabularies",
+                "failure": "Data does not use FAIR-compliant vocabularies"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-I1-01M. It can be redefined by the plugin.",
             "requirement_level": "MAY"
         },
         "RDA_I3_01M": {
-            "description": "Metadata includes references to other metadata",
+            "description": "The indicator is about the way that metadata is connected to other metadata, for example through links to information about organisations, people, places, projects or time periods that are related to the digital object that the metadata describes",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata includes references to other metadata",
+                "failure": "Metadata does not include references to other metadata"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks metadata like relation or contributor. Checks ORCID so far.",
             "requirement_level": "SHOULD"
         },
         "RDA_I3_01D": {
-            "description": "Data includes references to other data",
+            "description": "This indicator is about the way data is connected to other data, for example linking to previous or related research data that provides additional context to the data",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data includes references to other data",
+                "failure": "Data does not include references to other data"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-I3-01M. It can be redefined by the plugin.",
             "requirement_level": "MAY"
         },
         "RDA_I3_02M": {
-            "description": "Metadata includes references to other data",
+            "description": "This indicator is about the way metadata is connected to other data, for example linking to previous or related research data that provides additional context to the data",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata includes references to other data",
+                "failure": "Metadata does not include references to other data"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks metadata like relation or contributor and also if those links are Persistent identifiers (ORCID for people, DOIs or Handle, etc. for objects, thanks to idutils package)",
             "requirement_level": "MAY"
         },
         "RDA_I3_02D": {
-            "description": "Data includes qualified references to other data",
+            "description": "This indicator is about the way data is connected to other data. The references need to be qualified which means that the relationship role of the related resource is specified, for example that a particular link is a specification of a unit of measurement, or the identification of the sensor with which the measurement was done",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Data includes qualified references to other data",
+                "failure": "Data does not include qualified references to other data"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin",
             "requirement_level": "MAY"
         },
         "RDA_I3_03M": {
-            "description": "Metadata includes qualified references to other metadata",
+            "description": "This indicator is about the way metadata is connected to other metadata, for example to descriptions of related resources that provide additional context to the data",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata includes qualified references to other metadata",
+                "failure": "Metadata does not include qualified references to other metadata"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin",
             "requirement_level": "SHOULD"
         },
         "RDA_I3_04M": {
-            "description": "Metadata include qualified references to other data",
+            "description": "This indicator is about the way metadata is connected to other data. The references need to be qualified which means that the relationship role of the related resource is specified, for example dataset X is derived from dataset Y",
             "evidence": {
-                "success": "",
-                "failure": ""
+                "success": "Metadata include qualified references to other data",
+                "failure": "Metadata do not include qualified references to other data"
             },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-I1-02M. It can be redefined by the plugin",
             "requirement_level": "MAY"
         }
     }
