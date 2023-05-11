@@ -21,17 +21,17 @@
         "QC.Doc02": {
             "description": "Are docs written using a text-plain markup language?",
             "evidence": {
-                "success": "Documentation written using <%s>",
+                "success": "Documentation written using {doc_file_type}",
                 "failure": "Documentation is not written using a markup language"
             },
 	    "hint": "Existing documentation shall be writte in a text-plain markup language, as a requirement to adopt a <a href=\"https://www.writethedocs.org/guide/docs-as-code/\" target=\"_blank\">docs-as-code</a> approach. SQAaaS supported languages are <a href=\"https://www.markdownguide.org/\" target=\"_blank\">Markdown</a> and <a href=\"https://docutils.sourceforge.io/rst.html\" target=\"_blank\">reStructuredText</a>",
             "requirement_level": "MUST"
         },
         "QC.Doc02.X": {
-            "description": "Are docs following a style for the %s markup language?",
+            "description": "Are docs following a style for the {doc_file_type} markup language?",
             "evidence": {
-                "success": "Docs are compliant with <%s> standard",
-                "failure": "Docs are not fully compliant with <%s> standard"
+                "success": "Docs are compliant with {doc_file_standard} standard",
+                "failure": "Docs are not fully compliant with {doc_file_standard} standard"
             },
 	    "hint": "When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on <a href=\"https://github.com/markdownlint/markdownlint/\" target=\"_blank\">markdownlint</a> for Markdown files and <a href=\"https://github.com/twolfson/restructuredtext-lint/\" target=\"_blank\">restructuredtext-lint</a> for reStructuredText",
             "requirement_level": "MAY"
