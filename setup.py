@@ -32,7 +32,10 @@ setup(
         'standards/SQA_baseline/QC.Sty.json',
         'standards/SQA_baseline/QC.Ver.json',
         'standards/SQA_baseline/SvcQC.Dep.json',
-        'standards/RDA_maturity_model/QC.FAIR.json'
+        'standards/RDA_maturity_model/QC.FAIR.F.json',
+        'standards/RDA_maturity_model/QC.FAIR.A.json',
+        'standards/RDA_maturity_model/QC.FAIR.I.json',
+        'standards/RDA_maturity_model/QC.FAIR.R.json'
     ]},
     # python_requires='>=3.6, <4',
     install_requires=[
