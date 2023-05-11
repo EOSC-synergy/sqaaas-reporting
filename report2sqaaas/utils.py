@@ -160,7 +160,7 @@ def load_json(the_input):
 
 def load_criterion_from_standard(criterion):
     _standard_path = 'standards/SQA_baseline'
-    if criterion.finds('QC.FAIR') == 0:
+    if criterion.find('QC.FAIR') == 0:
         _standard_path = 'standards/RDA_maturity_model'
 
     SW_BASELINE_PATH = os.path.join(
