@@ -64,38 +64,5 @@
 	    "hint": "This indicator is linked to the following principle: <em>F4: (Meta)data are registered or indexed in a searchable resource.</em><p>The indicator tests whether the metadata is offered in such a way that it can be indexed. In some cases, metadata could be provided together with the data to a  local institutional repository or to  a  domain-specific or regional portal, or metadata could be included in a landing page where it can be harvested by a search engine. The indicator remains broad enough on purpose not to limit the way how and by whom the harvesting and indexing of the data might be done.</p><p>This indicator can be evaluated by verifying that the metadata is made available for indexing. This is the case when the metadata is in fact harvested and indexed, for example in a general search engine or in a more restricted index, such as an institutional repository or a discipline-specific portal.</p><p>More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
             "requirement_level": "MUST"
         }
-    },
-    "QC.FAIR.A": {
-        "RDA_A1_01M": {
-            "description": "Metadata contains information to enable the user to get access to the data",
-            "evidence": {
-                "success": "",
-                "failure": ""
-            },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
-            "requirement_level": "SHOULD"
-        }
-    },
-    "QC.FAIR.I": {
-        "RDA_I1_01M": {
-            "description": "",
-            "evidence": {
-                "success": "",
-                "failure": ""
-            },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
-            "requirement_level": "SHOULD"
-        }
-    },
-    "QC.FAIR.R": {
-        "RDA_R1_01M": {
-            "description": "Is the metadata identified by a persistent identifier?",
-            "evidence": {
-                "success": "",
-                "failure": ""
-            },
-	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
-            "requirement_level": "MUST"
-        }
     }
 }

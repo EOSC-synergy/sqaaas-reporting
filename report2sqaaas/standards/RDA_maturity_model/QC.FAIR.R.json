@@ -1,0 +1,14 @@
+
+{
+    "QC.FAIR.R": {
+        "RDA_R1_01M": {
+            "description": "Is the metadata identified by a persistent identifier?",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "MUST"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+
+{
+    "QC.FAIR.A": {
+        "RDA_A1_01M": {
+            "description": "Metadata contains information to enable the user to get access to the data",
+            "evidence": {
+                "success": "",
+                "failure": ""
+            },
+	    "hint": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+            "requirement_level": "SHOULD"
+        }
+    }
+}
