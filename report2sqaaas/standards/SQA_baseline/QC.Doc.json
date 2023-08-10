@@ -27,7 +27,7 @@
 	    "hint": "Existing documentation shall be writte in a text-plain markup language, as a requirement to adopt a <a href=\"https://www.writethedocs.org/guide/docs-as-code/\" target=\"_blank\">docs-as-code</a> approach. SQAaaS supported languages are <a href=\"https://www.markdownguide.org/\" target=\"_blank\">Markdown</a> and <a href=\"https://docutils.sourceforge.io/rst.html\" target=\"_blank\">reStructuredText</a>",
             "requirement_level": "MUST"
         },
-        "QC.Doc02.X": {
+        "QC.Doc02.2": {
             "description": "Are docs following a style for the {doc_file_type} markup language?",
             "evidence": {
                 "success": "Docs are compliant with {doc_file_standard} standard",
