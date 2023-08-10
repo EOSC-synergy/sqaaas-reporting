@@ -7,7 +7,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='report2sqaaas',
-    version='1.8.0',
+    version='1.10.0',
     description='The reporting component for the SQAaaS platform',
     url='https://github.com/eosc-synergy/sqaaas-reporting',
     author='Pablo Orviz',
@@ -25,13 +25,16 @@ setup(
     package_data={'report2sqaaas': [
         'standards/SQA_baseline/QC.Acc.json',
         'standards/SQA_baseline/QC.Doc.json',
-        'standards/SQA_baseline/QC.FAIR.json',
         'standards/SQA_baseline/QC.Lic.json',
         'standards/SQA_baseline/QC.Met.json',
         'standards/SQA_baseline/QC.Sec.json',
         'standards/SQA_baseline/QC.Sty.json',
         'standards/SQA_baseline/QC.Ver.json',
-        'standards/SQA_baseline/SvcQC.Dep.json'
+        'standards/SQA_baseline/SvcQC.Dep.json',
+        'standards/RDA_maturity_model/QC.FAIR.F.json',
+        'standards/RDA_maturity_model/QC.FAIR.A.json',
+        'standards/RDA_maturity_model/QC.FAIR.I.json',
+        'standards/RDA_maturity_model/QC.FAIR.R.json'
     ]},
     # python_requires='>=3.6, <4',
     install_requires=[

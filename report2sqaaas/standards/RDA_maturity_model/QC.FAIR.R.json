@@ -1,0 +1,105 @@
+
+{
+    "QC.FAIR.R": {
+        "RDA_R1_01M": {
+            "description": "The indicator concerns the quantity but also the quality of metadata provided in order to enhance data reusability",
+            "evidence": {
+                "success": "Plurality of accurate and relevant attributes are provided to allow reuse",
+                "failure": "Plurality of accurate and relevant attributes are not provided to allow reuse"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Depending on the metadata schema used, checks that at least the mandatory terms are filled (75%) and the number of terms are high (25%)",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_1_01M": {
+            "description": "This indicator is about the information that is provided in the metadata related to the conditions (e.g. obligations, restrictions) under which data can be reused",
+            "evidence": {
+                "success": "Metadata includes information about the licence under which the data can be reused",
+                "failure": "Metadata does not include information about the licence under which the data can be reused"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks if the license information is available in any format",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_1_02M": {
+            "description": "This indicator requires the reference to the conditions of reuse to be a standard licence, rather than a locally defined licence",
+            "evidence": {
+                "success": "Metadata refers to a standard reuse licence",
+                "failure": "Metadata does not refer to a standard reuse licence"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks the presence of license information in metadata and if it is included in the list https://spdx.org/licenses/licenses.json",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_R1_1_03M": {
+            "description": "This indicator is about the way that the reuse licence is expressed. Rather than being a human-readable text, the licence should be expressed in such a way that it can be processed by machines, without human intervention",
+            "evidence": {
+                "success": "Metadata refers to a machine-understandable reuse licence",
+                "failure": "Metadata does not refer to a machine-understandable reuse licence"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks the presence of license information in metadata and if it uses an id from the list https://spdx.org/licenses/licenses.json",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_R1_2_01M": {
+            "description": "This indicator requires the metadata to include information about the provenance of the data, i.e. information about the origin, history or workflow that generated the data, in a way that is compliant with the standards that are used in the community for which the data is curated",
+            "evidence": {
+                "success": "Metadata includes provenance information according to community-specific standards",
+                "failure": "Metadata does not include provenance information according to community-specific standards"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "To be defined (By default, DSpace all items record automatically the metadata <em>dc.description.provenance of date, person and bitestream of the deposit. On the other hand, the description of the digital object might give more information about its origin, e.g. specifying creation date (<em>dc.date.created</em>), methodology (<em>dc.description</em>), and relationships with other objects (<em>dc.relation</em>).",
+            "requirement_level": "SHOULD"
+        },
+        "RDA_R1_2_02M": {
+            "description": "This indicator requires that the metadata provides provenance information according to a cross-domain language",
+            "evidence": {
+                "success": "Metadata includes provenance information according to a cross-community language",
+                "failure": "Metadata does not include provenance information according to a cross-community language"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-R1.2-01M. It can be redefined by the plugin.",
+            "requirement_level": "MAY"
+        },
+        "RDA_R1_3_01M": {
+            "description": "This indicator requires that metadata complies with community standards",
+            "evidence": {
+                "success": "Metadata complies with a community standard",
+                "failure": "Metadata does not comply with a community standard"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks metadata formats for a specific community. For a generic service, Dublin Core as metadata standard for multi-domain repositories",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_3_01D": {
+            "description": "This indicator requires that data complies with community standards",
+            "evidence": {
+                "success": "Data complies with a community standard",
+                "failure": "Data does not comply with a community standard"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-R1-01D. It can be redefined by the plugin.",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_3_02M": {
+            "description": "This indicator requires that the metadata follows a community standard that has a machine-understandable expression",
+            "evidence": {
+                "success": "Metadata is expressed in compliance with a machine-understandable community standard",
+                "failure": "Metadata is not expressed in compliance with a machine-understandable community standard"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "Checks if metadata is described using any machine format like XML or RDF schema",
+            "requirement_level": "MUST"
+        },
+        "RDA_R1_3_02D": {
+            "description": "This indicator requires that the data follows a community standard that has a machine-understandable expression",
+            "evidence": {
+                "success": "Data is expressed in compliance with a machine-understandable community standard",
+                "failure": "Data is not expressed in compliance with a machine-understandable community standard"
+            },
+	    "info": "More details on <a href=\"https://doi.org/10.15497/rda00050\" target=\"_blank\">RDA Maturity Model</a> specification</p>.",
+	    "hint": "This test implements the one carried out in RDA-R1-01D. It can be redefined by the plugin.",
+            "requirement_level": "SHOULD"
+        }
+    }
+}
