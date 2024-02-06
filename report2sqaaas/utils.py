@@ -154,6 +154,7 @@ def load_json(the_input):
         json_data = json.loads(data)
     except json.decoder.JSONDecodeError as e:
         logger.error('Could not load JSON data: %s' % str(e))
+        logger.debug('JSON payload received: %s' % json.dumps(json_data))
 
     return json_data
 
