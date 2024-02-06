@@ -1,0 +1,13 @@
+{
+    "QC.Uni": {
+        "QC.Uni01": {
+            "description": "Are the tests passing through an automated means?",
+            "evidence": {
+                "success": "Test cases are successfully passing using {tool_name} testing framework",
+                "failure": "Test cases are not passing using {tool_name} testing framework"
+            },
+	    "hint": "Please check & solve the failing test cases found by the {tool_name} tool",
+            "requirement_level": "MUST"
+        }
+    }
+}
