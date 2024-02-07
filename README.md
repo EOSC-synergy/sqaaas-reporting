@@ -11,7 +11,8 @@ SPDX-License-Identifier: GPL-3.0-only
 [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-<img src="https://github.com/EOSC-synergy/service-qa-baseline/blob/master/content/images/logo-SYNERGY.png" height="80">
+#### Achievements
+[![SQAaaS badge](https://github.com/EOSC-synergy/SQAaaS/raw/master/badges/badges_150x116/badge_software_silver.png)](https://api.eu.badgr.io/public/assertions/Dzr7HNIJSv6mhaGmvb27Fg "SQAaaS silver badge achieved")
 
 ## Institutions owning the result
 <p float="left">
@@ -19,9 +20,6 @@ SPDX-License-Identifier: GPL-3.0-only
     <img src="https://github.com/EOSC-synergy/service-qa-baseline/blob/master/content/images/logo-csic.png" height="80">
     <img src="https://github.com/EOSC-synergy/service-qa-baseline/blob/master/content/images/logo-UPV.png" height="80">
 </p>
-
-#### Achievements
-[![SQAaaS badge](https://github.com/EOSC-synergy/SQAaaS/raw/master/badges/badges_150x116/badge_software_silver.png)](https://api.eu.badgr.io/public/assertions/Dzr7HNIJSv6mhaGmvb27Fg "SQAaaS silver badge achieved")
 
 
 The reporting tool for the SQAaaS platform.
