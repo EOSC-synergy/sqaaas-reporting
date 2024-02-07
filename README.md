@@ -62,3 +62,11 @@ $ report2sqaaas licensee licensee_data.json
   which hosts the current set of supported output validation plugins.
 - [sqaaas-reporting-cookiecutter](https://github.com/eosc-synergy/sqaaas-reporting-cookiecutter),
   which provides a template to easily create the structure of new plugins.
+
+## Acknowledgements
+This software has been developed within the EOSC-Synergy project that has received funding from the European Union's Horizon 2020 research and innovation programme      >  \under grant agreement number 857647.
+
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WF4g5KH3PnQE_Ve10QFRS-gZ0NpCQ7Qr-_km1RqnOCEF1fQt" hspace="20">
+  <img src="images/logo-SYNERGY.png" height="100">
+</p>
