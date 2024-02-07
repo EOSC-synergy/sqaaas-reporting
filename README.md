@@ -16,9 +16,9 @@ SPDX-License-Identifier: GPL-3.0-only
 
 ## Institutions owning the result
 <p float="left">
-    <img src="https://github.com/EOSC-synergy/service-qa-baseline/blob/master/content/images/logo-LIP.png" height="80">
-    <img src="https://github.com/EOSC-synergy/service-qa-baseline/blob/master/content/images/logo-csic.png" height="80">
-    <img src="https://github.com/EOSC-synergy/service-qa-baseline/blob/master/content/images/logo-UPV.png" height="80">
+     <img src="images/logo-csic.png" height="50" hspace="10"/>
+     <img src="images/logo-UPV.png" height="50" hspace="10"/>
+     <img src="images/logo-LIP.png" height="50" hspace="10"/>
 </p>
 
 
