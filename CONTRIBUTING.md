@@ -1,7 +1,14 @@
+<!--
+SPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>
+SPDX-FileCopyrightText: 2017-2024 Pablo Orviz <orviz@ifca.unican.es>
+
+SPDX-License-Identifier: GPL-3.0-only
+-->
+
 # Contributing to the SQAaaS Reporting component for the API server
 
 This document will help answer common questions and guide you through the steps
-to make first contribution. 
+to make first contribution.
 
 ## Issue Reporting
 
@@ -14,14 +21,14 @@ improvement. The issue will be the main place for discussion.
 
 * Check that the issue has not already been reported
 * Use a descriptive title, be clear and concise.
-* Include the release version 
+* Include the release version
 * Include any additional info such as error messages, CLI args used,
 configuration parameters, etc.
 
 ## Code Contributions
 
 Please use [forks](https://guides.github.com/activities/forking/) for any code
-contribution 
+contribution
 
 Markdownlint follows a [forking
 workflow](), and we have a simple
@@ -30,7 +37,7 @@ process for contributions:
 1. Open an associate issue
 1. Use [forks](https://guides.github.com/activities/forking/) for any code
    contribution:
-   1. Fork the project 
+   1. Fork the project
 
 
 If you're adding or making changes to rules, read the [Development
