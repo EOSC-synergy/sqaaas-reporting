@@ -1,4 +1,9 @@
-on: [push]
+# SPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>
+# SPDX-FileCopyrightText: 2017-2024 Pablo Orviz <orviz@ifca.unican.es>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+on: [release]
 
 jobs:
   sqaaas_job:
@@ -7,6 +12,3 @@ jobs:
     steps:
       - name: SQAaaS assessment action
         uses: eosc-synergy/sqaaas-assessment-action@v1
-        with:
-          repo: 'https://github.com/eosc-synergy/sqaaas-reporting'
-          branch: 'main'

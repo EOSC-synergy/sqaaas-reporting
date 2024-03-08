@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>
+# SPDX-FileCopyrightText: 2017-2024 Pablo Orviz <orviz@ifca.unican.es>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
 import argparse
 import json
 
@@ -10,37 +15,37 @@ def get_parser(validators):
     )
 
     parser.add_argument(
-        'validator',
-        metavar='VALIDATOR',
+        "validator",
+        metavar="VALIDATOR",
         type=str,
         choices=validators,
         help=(
-            'Identifier of the output validator for the tool being triggered. '
-            'Allowed values: {%(choices)s}'
-        )
+            "Identifier of the output validator for the tool being triggered. "
+            "Allowed values: {%(choices)s}"
+        ),
     )
 
     parser.add_argument(
-        'stdout',
-        metavar='FILE|TEXT',
+        "stdout",
+        metavar="FILE|TEXT",
         type=str,
-        help=(
-            'Location of the file or text that contains the output to be validated.'
-        )
+        help=("Location of the file or text that contains the output to be validated."),
     )
 
     parser.add_argument(
-        '--threshold',
-        metavar='NUMBER',
+        "--threshold",
+        metavar="NUMBER",
         type=int,
         help=(
-            'Optional argument required by some plugins in order to state '
-            'whether the validation is successful'
-        )
+            "Optional argument required by some plugins in order to state "
+            "whether the validation is successful"
+        ),
     )
 
     for validator_name, validator_obj in validators.items():
-        group = parser.add_argument_group("<%s> validator plugin options" % validator_name)
+        group = parser.add_argument_group(
+            "<%s> validator plugin options" % validator_name
+        )
         validator_obj.populate_parser(group)
 
     return parser
