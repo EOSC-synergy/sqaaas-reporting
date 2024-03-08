@@ -86,15 +86,12 @@ class BaseValidator(abc.ABC):
 
     @abc.abstractmethod
     def validate(self) -> dict:
-        """
-        Main method being called by the report2sqaaas module.
+        """Main method being called by the report2sqaaas module.
 
-        This method shall be implemented and return at the very least a dict
-        containing the value of the <valid> variable, such as:
+        This method shall be implemented and return at the very least a
+        dict containing the value of the <valid> variable, such as:
 
-        return {
-            'valid': self.valid
-        }
+        return {     'valid': self.valid }
         """
 
 
