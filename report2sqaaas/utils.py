@@ -166,7 +166,10 @@ def load_criterion_from_standard(criterion):
         )
         data = load_json(criterion_file)
     except Exception as e:
-        logger.error("Criterion <%s> not found in the available standards!: %s" % (criterion, str(e)))
+        logger.error(
+            "Criterion <%s> not found in the available standards!: %s"
+            % (criterion, str(e))
+        )
 
     if data:
         data = data[criterion]
