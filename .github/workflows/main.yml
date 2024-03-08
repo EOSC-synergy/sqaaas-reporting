@@ -12,6 +12,3 @@ jobs:
     steps:
       - name: SQAaaS assessment action
         uses: eosc-synergy/sqaaas-assessment-action@v1
-        with:
-          repo: 'https://github.com/eosc-synergy/sqaaas-reporting'
-          branch: 'main'
