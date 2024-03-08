@@ -5,7 +5,7 @@
 
 import pathlib
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
