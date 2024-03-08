@@ -11,4 +11,4 @@ jobs:
     name: Job that triggers SQAaaS platform
     steps:
       - name: SQAaaS assessment action
-        uses: eosc-synergy/sqaaas-assessment-action@v1
+        uses: eosc-synergy/sqaaas-assessment-action@v2
