@@ -7,7 +7,6 @@ import abc
 import json
 import logging
 import os.path
-import re
 import sys
 from types import SimpleNamespace
 
@@ -129,9 +128,7 @@ def get_validator(opts):
 
 def load_data(the_input):
     data = {}
-    is_file = False
     if os.path.isfile(the_input) and os.path.exists(the_input):
-        is_file = True
         logger.debug("Input file found: %s" % the_input)
         with open(the_input) as the_file:
             data = the_file.read()
@@ -169,7 +166,7 @@ def load_criterion_from_standard(criterion):
         )
         data = load_json(criterion_file)
     except Exception as e:
-        logger.error("Criterion <%s> not found in the available standards!" % criterion)
+        logger.error("Criterion <%s> not found in the available standards!: %s" % (criterion, str(e)))
 
     if data:
         data = data[criterion]
