@@ -5,3 +5,8 @@
 
 black
 isort
+pre-commit
+flake8
+mypy
+git+https://github.com/orviz/docformatter@lists_in_ini_files#egg=docformatter
+reuse
